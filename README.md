@@ -4,6 +4,17 @@
 My personal open source blog project,
 using on my web page : [sergey-didenko.pro](https://sergey-didenko.pro)
 
+**The project was created to solve several problems:**
+
+- Develop the right technology stack
+- Develop a convenient and flexible **blog** using the latest technology
+- To consolidate knowledge in the development and try new solutions
+- To consolidate knowledge in project management
+- **Educational material** for novice programmers,
+as the project is developed "from scratch".
+The development process is as close as possible to the workflow,
+and therefore I hope it will be useful to someone.
+
 ## Features
 
 [Changelog][changelog]
