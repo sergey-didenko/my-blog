@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="0.3"></a>
+## [ver. 0.3] (2017-02-3)
+
+#### Features
+[[F-1][]] Init Liquibase:
+* Added Liquibase DB migration tool
+* Added configuration
+* Added Resources
+
+[F-1]: https://github.com/sergey-didenko/my-blog/pull/5
+
+#### Bug Fixes
+* Fixed app properties
+* Fixed build scripts,
+* Fixed "default profile" issue
+
 <a name="0.2"></a>
 ## [ver. 0.2] (2017-02-3)
 #### Bug Fixes, Features
