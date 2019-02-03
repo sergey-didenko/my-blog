@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.4.RELEASE'
+        springBootVersion = '2.1.1.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -15,7 +15,6 @@ plugins {
     id "com.moowork.node" version "1.2.0"
 }
 
-apply plugin: 'application'
 apply plugin: 'java'
 apply plugin: 'idea'
 
@@ -35,27 +34,23 @@ allprojects {
 }
 
 group = 'com.sergey.didenko'
-mainClassName = 'com.sergey.didenko.myblog.MyBlogApplication'
+def mainClass = 'com.sergey.didenko.myblog.MyBlogApplication'
 version = '0.1'
 sourceCompatibility = 1.8
 
 //TODO : IDEA tasks :
 // Clean => gradle task 'clean compileJava'
 // BootRun => gradle task 'bootRun'
-// BuildDev => gradle task 'bootWar'
 // BuildProd => gradle task 'bootWar' with argument : '-Pprod'
 // Npm => before Npm - gradle task 'clean compileJava', then : 'webpack:dev' 
 // SpringBoot => 'Build'
 
+bootWar {
+    mainClassName = "$mainClass"
+}
+
 war {
     webAppDirName = "$buildDir/static"
-    manifest {
-        attributes(
-                "Main-Class": "$mainClassName",
-                "Build-Version": "$version",
-                "Build-Time": new Date().format("yyyy-MM-dd' 'HH:mm:ss")
-        )
-    }
 }
 
 task copyWepApp(type: Copy) {
@@ -68,14 +63,14 @@ task deleteWepApp(type: Delete) {
     followSymlinks = true
 }
 
-task bootWar(type: Copy) {
+task copyWar(type: Copy) {
     from "$buildDir/libs"
     into "$buildDir"
     include('*.war')
 }
 
 springBoot {
-    mainClass = "$mainClassName"
+    mainClassName = "$mainClass"
     buildInfo()
 }
 
@@ -85,13 +80,51 @@ if (project.hasProperty('prod')) {
     apply from: 'gradle/profile_dev.gradle'
 }
 
+configurations {
+    providedRuntime
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    //[Spring] tools
+    compile "org.springframework.boot:spring-boot-loader-tools"
+
+    //[Spring] tools
+    annotationProcessor ("org.springframework.boot:spring-boot-configuration-processor")
+
+    //[Spring] Web -> @RestController, @RequestMapping,...
+    implementation('org.springframework.boot:spring-boot-starter-web')
+
+    //[Spring] JPA Repository for DB
+    //implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+
+    //[Spring] Security
+    //implementation('org.springframework.boot:spring-boot-starter-security')
+
+    //[Spring] other modules
+    //providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+    //implementation('org.springframework.session:spring-session-core')
+    //implementation('org.springframework.boot:spring-boot-starter-mail')
+    //implementation('org.springframework.boot:spring-boot-starter-quartz')
+
+    //[DB] migration utils
+    //implementation('org.liquibase:liquibase-core')
+
+    //[DB] MySQLConnector
+    //compile 'mysql:mysql-connector-java:8.0.13'
+
+    //[DB] PostgreSQL
+    //runtimeOnly('org.postgresql:postgresql')
+
+    //[Test] utils
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    //testImplementation('org.springframework.security:spring-security-test')
+    testCompile "junit:junit"
+
 }
 
 wrapper {

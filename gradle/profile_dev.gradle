@@ -29,7 +29,8 @@ processResources {
 processResources.dependsOn webpackBuildDev
 deleteWepApp.dependsOn copyWepApp
 war.dependsOn deleteWepApp
-bootWar.dependsOn war
+copyWar.dependsOn war
+bootWar.dependsOn copyWar
 
 def shouldWebpackRun() {
     !file("$buildDir/classes/java/main/static/app/main.bundle.js").exists() || project.hasProperty('webpack')

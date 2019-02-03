@@ -34,4 +34,5 @@ processResources.dependsOn webpack
 test.dependsOn webpack_test
 deleteWepApp.dependsOn copyWepApp
 war.dependsOn deleteWepApp
-bootWar.dependsOn war
+copyWar.dependsOn war
+bootWar.dependsOn copyWar
