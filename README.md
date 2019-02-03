@@ -1,11 +1,10 @@
 # My Blog
 
-## About
-**Few words :**
+### About
 My personal open source blog project,
 using on my web page : [sergey-didenko.pro](https://sergey-didenko.pro)
 
-# Features
+## Features
 
 [Changelog][changelog]
 
