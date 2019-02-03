@@ -1,5 +1,17 @@
 # Changelog
 
+
+
+<a name="0.4"></a>
+## [ver. 0.4] (2017-02-4)
+#### Features
+* Added JPA2 meta-model generator
+
+#### Bug Fixes
+[[Issue-1][]] Fixed loading issue
+
+[Issue-1]: https://github.com/sergey-didenko/my-blog/issues/6
+
 <a name="0.3"></a>
 ## [ver. 0.3] (2017-02-3)
 
