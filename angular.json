@@ -1,0 +1,39 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "my-blog": {
+            "root": "",
+            "sourceRoot": "src/main/static",
+            "projectType": "application",
+            "architect": {}
+        }
+    },
+    "defaultProject": "my-blog",
+    "cli": {
+        "packageManager": "npm"
+    },
+    "schematics": {
+        "@schematics/angular:component": {
+            "inlineStyle": true,
+            "inlineTemplate": false,
+            "spec": false,
+            "prefix": "myb",
+            "styleExt": "scss"
+        },
+        "@schematics/angular:directive": {
+            "spec": false,
+            "prefix": "myb"
+        },
+        "@schematics/angular:guard": {
+            "spec": false
+        },
+        "@schematics/angular:pipe": {
+            "spec": false
+        },
+        "@schematics/angular:service": {
+            "spec": false
+        }
+    }
+}

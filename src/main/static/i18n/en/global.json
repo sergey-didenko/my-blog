@@ -1,0 +1,10 @@
+{
+    "global": {
+        "title": "My_blog",
+        "menu": {
+            "home": "Home",
+            "language": "Language"
+        }
+    },
+    "footer": "copyright"
+}

@@ -1,0 +1,65 @@
+<nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+    <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
+        <span class="logo-img"></span>
+        <span class="navbar-title">{{'global.title' | translate}}</span>
+    </a>
+    <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+        <fa-icon icon="bars"></fa-icon>
+    </a>
+    <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <button class="nav-link" mat-button routerLink="/" (click)="collapseNavbar()">
+                    <mat-icon class="mat-18">home</mat-icon>
+                    {{'global.menu.home' | translate}}
+                </button>
+            </li>
+
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <button class="nav-link" mat-button routerLink="/test-page" (click)="collapseNavbar()">
+                    <mat-icon class="mat-18">list</mat-icon>
+                    {{'home.test-page.title' | translate}}
+                </button>
+            </li>
+
+            <li class="nav-item" *ngIf="languages && languages.length > 1">
+                <button class="nav-link" mat-button [matMenuTriggerFor]="htmlLanguage">
+                    <mat-icon class="mat-18">flag</mat-icon>
+                    <span>{{'global.menu.language' | translate}}</span>
+                </button>
+                <mat-menu #htmlLanguage="matMenu">
+                    <a mat-menu-item *ngFor="let language of languages" [mybActiveMenu]="language.iso" (click)="changeLanguage(language.iso);collapseNavbar();">
+                        {{language.name}}
+                    </a>
+                </mat-menu>
+            </li>
+
+            <!-- Footer links -->
+            <li class="nav-item d-md-none d-lg-none" *ngIf="languages && languages.length > 1">
+                <button class="nav-link" mat-button [matMenuTriggerFor]="htmlLinks">
+                    <mat-icon class="mat-18">link</mat-icon>
+                    <span>Links</span>
+                </button>
+                <mat-menu #htmlLinks="matMenu">
+                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
+                        Link 1
+                    </a>
+
+                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
+                        Link 2
+                    </a>
+
+                    <mat-divider></mat-divider>
+
+                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
+                        Link 1
+                    </a>
+
+                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
+                        Link 2
+                    </a>
+                </mat-menu>
+            </li>
+        </ul>
+    </div>
+</nav>

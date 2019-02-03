@@ -1,0 +1,30 @@
+/* ==========================================================================
+Navbar
+========================================================================== */
+
+.navbar {
+    padding: 0.2rem 1rem;
+
+    ul.navbar-nav {
+        .nav-item {
+            margin-left: 0.5em;
+        }
+    }
+
+    a.nav-link {
+        font-weight: 400;
+    }
+
+}
+
+/* ==========================================================================
+Logo styles
+========================================================================== */
+.logo-img {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../../../assets/images/logo.svg') no-repeat center center;
+    background-size: contain;
+}

@@ -1,0 +1,89 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.4.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
+    id "com.moowork.node" version "1.2.0"
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'com.moowork.node'
+apply plugin: 'io.spring.dependency-management'
+
+buildDir = 'build'
+allprojects {
+    idea {
+        module {
+            outputDir file("$buildDir/classes/java/main")
+            testOutputDir file("$buildDir/classes/test/main")
+        }
+    }
+}
+
+group = 'com.sergey.didenko'
+version = ''
+sourceCompatibility = 1.8
+
+//TODO : IDEA tasks :
+// Clean => gradle task 'clean compileJava'
+// BuildDev => gradle task 'bootWar'
+// BuildProd => gradle task 'bootWar' with argument : '-Pprod'
+// Npm => before Npm - gradle task 'clean compileJava', then : 'webpack:dev' 
+// SpringBoot => 'Build'
+
+war {
+    webAppDirName = "$buildDir/static"
+}
+
+task copyWepApp(type: Copy) {
+    from "$buildDir/classes/java/main/static"
+    into "$buildDir/static"
+}
+
+task deleteWepApp(type: Delete) {
+    delete "$buildDir/classes/java/main/static"
+    followSymlinks = true
+}
+
+task bootWar(type: Copy) {
+    from 'build/libs'
+    into 'build'
+    include('*.war')
+}
+
+springBoot {
+    mainClass = 'com.sergey.didenko.myblog.MyBlogApplication'
+    buildInfo()
+}
+
+if (project.hasProperty('prod')) {
+    apply from: 'gradle/profile_prod.gradle'
+} else {
+    apply from: 'gradle/profile_dev.gradle'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+wrapper {
+    distributionUrl='https://services.gradle.org/distributions/gradle-5.1.1-bin.zip'
+}
