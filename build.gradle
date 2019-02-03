@@ -41,7 +41,7 @@ sourceCompatibility = 1.8
 //TODO : IDEA tasks :
 // Clean => gradle task 'clean compileJava'
 // BootRun => gradle task 'bootRun'
-// BuildProd => gradle task 'bootWar' with argument : '-Pprod'
+// BuildProd => gradle task 'copyWar' with argument : '-Pprod'
 // Npm => before Npm - gradle task 'clean compileJava', then : 'webpack:dev' 
 // SpringBoot => 'Build'
 
