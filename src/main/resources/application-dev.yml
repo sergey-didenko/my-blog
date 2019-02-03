@@ -1,0 +1,36 @@
+logging:
+    level:
+        ROOT: INFO
+        com.svigelf.spring.testJavaEleven: INFO
+
+spring:
+    profiles:
+        active: dev
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: true
+    datasource:
+        url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&createDatabaseIfNotExist=true
+        username: admin
+        password: admin
+    jpa:
+        open-in-view: false
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            naming:
+                physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+                implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        properties:
+            hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    mvc:
+        favicon:
+            enabled: false
+    thymeleaf:
+        mode: HTML
+
+server:
+    port: 8080
+

@@ -18,6 +18,8 @@ package com.sergey.didenko.myblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * Main class
@@ -25,9 +27,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Author Sergey Didenko <sergey.didenko.dev@gmail.com>
  */
 @SpringBootApplication
+@EnableConfigurationProperties({LiquibaseProperties.class})
 public class MyBlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyBlogApplication.class, args);
+		SpringApplication app = new SpringApplication(MyBlogApplication.class);
+
+		// Set default profile (dev)
+		ApplicationWebXml.addDefaultProfile(app);
+		app.run(args);
 	}
 }

@@ -15,7 +15,7 @@ const ENV = 'development';
 module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: './build/classes/java/main/static',
+        contentBase: './build/static',
         proxy: [{
             context: [
                 '/api'
@@ -36,7 +36,7 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
         main: './src/main/static/app/app.main'
     },
     output: {
-        path: utils.root('build/classes/java/main/static'),
+        path: utils.root('build/static'),
         filename: 'app/[name].bundle.js',
         chunkFilename: 'app/[id].chunk.js'
     },

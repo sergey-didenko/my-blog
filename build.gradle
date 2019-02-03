@@ -24,14 +24,6 @@ apply plugin: 'com.moowork.node'
 apply plugin: 'io.spring.dependency-management'
 
 buildDir = 'build'
-allprojects {
-    idea {
-        module {
-            outputDir file("$buildDir/classes/java/main")
-            testOutputDir file("$buildDir/classes/test/main")
-        }
-    }
-}
 
 group = 'com.sergey.didenko'
 def mainClass = 'com.sergey.didenko.myblog.MyBlogApplication'
@@ -51,16 +43,6 @@ bootWar {
 
 war {
     webAppDirName = "$buildDir/static"
-}
-
-task copyWepApp(type: Copy) {
-    from "$buildDir/classes/java/main/static"
-    into "$buildDir/static"
-}
-
-task deleteWepApp(type: Delete) {
-    delete "$buildDir/classes/java/main/static"
-    followSymlinks = true
 }
 
 task copyWar(type: Copy) {
@@ -100,7 +82,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
 
     //[Spring] JPA Repository for DB
-    //implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
 
     //[Spring] Security
     //implementation('org.springframework.boot:spring-boot-starter-security')
@@ -112,10 +94,10 @@ dependencies {
     //implementation('org.springframework.boot:spring-boot-starter-quartz')
 
     //[DB] migration utils
-    //implementation('org.liquibase:liquibase-core')
+    implementation('org.liquibase:liquibase-core')
 
     //[DB] MySQLConnector
-    //compile 'mysql:mysql-connector-java:8.0.13'
+    compile 'mysql:mysql-connector-java:8.0.13'
 
     //[DB] PostgreSQL
     //runtimeOnly('org.postgresql:postgresql')
