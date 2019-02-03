@@ -99,6 +99,9 @@ dependencies {
     //[DB] MySQLConnector
     compile 'mysql:mysql-connector-java:8.0.13'
 
+    //[DB] JPA 2 generator
+    annotationProcessor "org.hibernate:hibernate-jpamodelgen"
+
     //[DB] PostgreSQL
     //runtimeOnly('org.postgresql:postgresql')
 

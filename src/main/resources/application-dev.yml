@@ -12,7 +12,8 @@ spring:
         livereload:
             enabled: true
     datasource:
-        url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&createDatabaseIfNotExist=true
+        type: com.mysql.cj.jdbc.MysqlDataSource
+        url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true
         username: admin
         password: admin
     jpa:
@@ -29,7 +30,7 @@ spring:
         favicon:
             enabled: false
     thymeleaf:
-        mode: HTML
+        cache: false
 
 server:
     port: 8080
