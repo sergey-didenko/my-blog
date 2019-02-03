@@ -21,6 +21,8 @@ using on my web page : [sergey-didenko.pro](https://sergey-didenko.pro)
  
  **Back-end stack :**
  - [Spring boot][] - java web framework
+ - [JPAModelGen][] - meta-model generator for JPA2
+ - [Liquibase][] - DB migration tool
  - **Embeded Tomcat** - servlet container to run project
  - [Gradle][] - build system
 
@@ -74,6 +76,8 @@ or gradle task :
 [NGX Translate]: https://github.com/ngx-translate
 
 [Spring boot]: https://spring.io/
+[JPAModelGen]: https://docs.jboss.org/hibernate/jpamodelgen/1.0/reference/en-US/html_single
+[Liquibase]: https://www.liquibase.org/
 [Embeded Tomcat]: http://tomcat.apache.org/
 [Gradle]: https://gradle.org/
 
