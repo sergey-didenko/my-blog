@@ -1,2 +1,4 @@
 # my-blog
-My personal open source blog project, who using on my web page
+My personal open source blog project,
+
+using on my web page : https://sergey-didenko.pro
