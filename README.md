@@ -1,15 +1,17 @@
 # My Blog
 
 ## About
-#### Few words
-
+**Few words :**
 My personal open source blog project,
+using on my web page : [sergey-didenko.pro](https://sergey-didenko.pro)
 
-using on my web page :
+# Features
 
-https://sergey-didenko.pro
+[Changelog][changelog]
 
-#### Technology stack
+[TODO Features][features_todo]
+
+## Technology stack
 **Front-end stack :**
  - [Angular/TypeScript][] - web framework
  - [Angular material][] and [NG Bootstrap][] - UI components, styles
@@ -21,12 +23,6 @@ https://sergey-didenko.pro
  - [Spring boot][] - java web framework
  - **Embeded Tomcat** - servlet container to run project
  - [Gradle][] - build system
-
-#### Features
-
-[Changelog][changelog]
-
-[TODO Features][features_todo]
 
 ## Project Installation
 #### Node JS
