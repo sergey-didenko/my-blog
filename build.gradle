@@ -15,6 +15,7 @@ plugins {
     id "com.moowork.node" version "1.2.0"
 }
 
+apply plugin: 'application'
 apply plugin: 'java'
 apply plugin: 'idea'
 
@@ -34,11 +35,13 @@ allprojects {
 }
 
 group = 'com.sergey.didenko'
-version = ''
+mainClassName = 'com.sergey.didenko.myblog.MyBlogApplication'
+version = '0.1'
 sourceCompatibility = 1.8
 
 //TODO : IDEA tasks :
 // Clean => gradle task 'clean compileJava'
+// BootRun => gradle task 'bootRun'
 // BuildDev => gradle task 'bootWar'
 // BuildProd => gradle task 'bootWar' with argument : '-Pprod'
 // Npm => before Npm - gradle task 'clean compileJava', then : 'webpack:dev' 
@@ -46,6 +49,13 @@ sourceCompatibility = 1.8
 
 war {
     webAppDirName = "$buildDir/static"
+    manifest {
+        attributes(
+                "Main-Class": "$mainClassName",
+                "Build-Version": "$version",
+                "Build-Time": new Date().format("yyyy-MM-dd' 'HH:mm:ss")
+        )
+    }
 }
 
 task copyWepApp(type: Copy) {
@@ -59,13 +69,13 @@ task deleteWepApp(type: Delete) {
 }
 
 task bootWar(type: Copy) {
-    from 'build/libs'
-    into 'build'
+    from "$buildDir/libs"
+    into "$buildDir"
     include('*.war')
 }
 
 springBoot {
-    mainClass = 'com.sergey.didenko.myblog.MyBlogApplication'
+    mainClass = "$mainClassName"
     buildInfo()
 }
 

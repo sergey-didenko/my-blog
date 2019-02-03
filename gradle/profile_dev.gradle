@@ -11,7 +11,7 @@ if (project.hasProperty('no-liquibase')) {
 }
 
 task webpackBuildDev(type: NpmTask, dependsOn: 'npm_install') {
-    onlyIf { shouldWebpackRun() == true }
+    onlyIf { shouldWebpackRun() }
     args = ["run", "webpack:build"]
 }
 
@@ -26,12 +26,11 @@ processResources {
     }
 }
 
-bootBuildInfo.dependsOn clean
 processResources.dependsOn webpackBuildDev
 deleteWepApp.dependsOn copyWepApp
 war.dependsOn deleteWepApp
 bootWar.dependsOn war
 
 def shouldWebpackRun() {
-    file('build/static/app/main.bundle.js').exists() == false || project.hasProperty('webpack')
+    !file("$buildDir/classes/java/main/static/app/main.bundle.js").exists() || project.hasProperty('webpack')
 }
