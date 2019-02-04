@@ -23,6 +23,8 @@ spring:
             naming:
                 physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
                 implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        properties:
+            hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
     liquibase:
         contexts: prod
     mvc:
