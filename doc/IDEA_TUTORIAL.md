@@ -8,7 +8,7 @@
 
  - Build and run front-end path, 
  just create new **NPM** configuration with **Run** command, argument **webpack:dev** 
- and for **before launch** block add gradle task **clean compileJava**
+ and for **before launch** block add gradle task **clean**
 
  - Build and run back-end path, 
  after running **NPM** task, just run **Spring Boot** task
