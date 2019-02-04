@@ -37,6 +37,15 @@ sourceCompatibility = 1.8
 // Npm => before Npm - gradle task 'clean compileJava', then : 'webpack:dev' 
 // SpringBoot => 'Build'
 
+allprojects {
+    idea {
+        module {
+            outputDir file("$buildDir/classes/java/main")
+            testOutputDir file("$buildDir/classes/test/main")
+        }
+    }
+}
+
 bootWar {
     mainClassName = "$mainClass"
 }
