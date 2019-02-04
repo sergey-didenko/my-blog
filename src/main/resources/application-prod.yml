@@ -18,11 +18,13 @@ spring:
         password: admin
     jpa:
         open-in-view: false
+        show-sql: false
         hibernate:
-            ddl-auto: update
             naming:
                 physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
                 implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    liquibase:
+        contexts: prod
     mvc:
         favicon:
             enabled: false
