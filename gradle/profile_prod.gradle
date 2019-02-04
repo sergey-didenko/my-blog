@@ -36,6 +36,4 @@ processResources {
 bootBuildInfo.dependsOn clean
 processResources.dependsOn webpack
 test.dependsOn webpack_test
-//deleteWepApp.dependsOn copyWepApp
-//bootWar.dependsOn deleteWepApp
 copyWar.dependsOn bootWar
