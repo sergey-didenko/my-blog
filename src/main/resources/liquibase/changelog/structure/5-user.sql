@@ -8,7 +8,7 @@ CREATE TABLE `user` (
   `name` varchar(50) DEFAULT '',
   `password` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `UKr43af9ap4edm43mmtq01oddj6` (`name`),
+  UNIQUE KEY `UKr43af9ap4edm43mmtq01oddj6` (`username`),
   UNIQUE KEY `UK6dotkott2kjsp8vw4d0m25fb7` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE=InnoDB AUTO_INCREMENT=1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 --rollback drop table user;
