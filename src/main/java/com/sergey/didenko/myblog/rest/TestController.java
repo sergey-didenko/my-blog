@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog;
+package com.sergey.didenko.myblog.rest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
