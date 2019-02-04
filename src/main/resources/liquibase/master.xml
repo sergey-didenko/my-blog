@@ -6,8 +6,12 @@
 
     <!-- Structure sql -->
     <include file="liquibase/changelog/structure/1-test.sql" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/structure/3-role.sql" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/structure/5-user.sql" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/structure/6-user_role.sql" relativeToChangelogFile="false"/>
 
     <!-- Data sql -->
     <include file="liquibase/changelog/data/2-test.sql" relativeToChangelogFile="false"/>
+    <include file="liquibase/changelog/data/4-role.sql" relativeToChangelogFile="false"/>
 
 </databaseChangeLog>

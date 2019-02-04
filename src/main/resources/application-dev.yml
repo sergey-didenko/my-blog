@@ -36,3 +36,7 @@ spring:
 server:
     port: 8080
 
+# App Properties
+myblog:
+    jwtSecret: jwtSecretKey
+    jwtExpiration: 86400
