@@ -31,9 +31,9 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
         }
     },
     entry: {
-        polyfills: './src/main/static/app/polyfills',
-        global: './src/main/static/assets/scss/global.scss',
-        main: './src/main/static/app/app.main'
+        polyfills: './src/main/webapp/app/polyfills',
+        global: './src/main/webapp/assets/scss/global.scss',
+        main: './src/main/webapp/app/app.main'
     },
     output: {
         path: utils.root('build/static'),
@@ -109,7 +109,7 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
         new ForkTsCheckerWebpackPlugin(),
         new webpack.ContextReplacementPlugin(
             /angular(\\|\/)core(\\|\/)/,
-            path.resolve(__dirname, './src/main/static')
+            path.resolve(__dirname, './src/main/webapp')
         ),
         new writeFilePlugin(),
         new webpack.WatchIgnorePlugin([

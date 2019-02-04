@@ -42,7 +42,7 @@ bootWar {
 }
 
 war {
-    webAppDirName = "$buildDir/static"
+
 }
 
 task copyWar(type: Copy) {

@@ -11,7 +11,7 @@ module.exports = (options) => ({
         extensions: ['.ts', '.js'],
         modules: ['node_modules'],
         alias: {
-            app: utils.root('src/main/static/app/'),
+            app: utils.root('src/main/webapp/app/'),
             ...rxPaths()
         }
     },
@@ -30,7 +30,7 @@ module.exports = (options) => ({
                     minifyJS:false,
                     minifyCSS:false
                 },
-                exclude: /(src\/main\/static\/index.html)/
+                exclude: /(src\/main\/webapp\/index.html)/
             },
             {
                 test: /\.(jpe?g|png|gif|svg|woff2?|ttf|eot)$/i,
@@ -63,21 +63,21 @@ module.exports = (options) => ({
             }
         }),
         new CopyWebpackPlugin([
-            { from: './src/main/static/assets/', to: 'assets' },
-            { from: './src/main/static/favicon.ico', to: 'favicon.ico' },
-            { from: './src/main/static/manifest.webapp', to: 'manifest.webapp' },
-            { from: './src/main/static/robots.txt', to: 'robots.txt' }
+            { from: './src/main/webapp/assets/', to: 'assets' },
+            { from: './src/main/webapp/favicon.ico', to: 'favicon.ico' },
+            { from: './src/main/webapp/manifest.webapp', to: 'manifest.webapp' },
+            { from: './src/main/webapp/robots.txt', to: 'robots.txt' }
         ]),
         new MergeJsonWebpackPlugin({
             output: {
                 groupBy: [
-                    { pattern: "./src/main/static/i18n/en/*.json", fileName: "./assets/i18n/en.json" },
-                    { pattern: "./src/main/static/i18n/ru/*.json", fileName: "./assets/i18n/ru.json" }
+                    { pattern: "./src/main/webapp/i18n/en/*.json", fileName: "./assets/i18n/en.json" },
+                    { pattern: "./src/main/webapp/i18n/ru/*.json", fileName: "./assets/i18n/ru.json" }
                 ]
             }
         }),
         new HtmlWebpackPlugin({
-            template: './src/main/static/index.html',
+            template: './src/main/webapp/index.html',
             chunks: ['vendors', 'polyfills', 'main', 'global'],
             chunksSortMode: 'manual',
             inject: 'body'

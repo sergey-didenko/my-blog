@@ -5,7 +5,7 @@
     "projects": {
         "my-blog": {
             "root": "",
-            "sourceRoot": "src/main/static",
+            "sourceRoot": "src/main/webapp",
             "projectType": "application",
             "architect": {}
         }
