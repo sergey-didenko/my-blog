@@ -24,6 +24,7 @@ apply plugin: 'com.moowork.node'
 apply plugin: 'io.spring.dependency-management'
 
 buildDir = 'build'
+project.buildDir = "$buildDir"
 
 group = 'com.sergey.didenko'
 def mainClass = 'com.sergey.didenko.myblog.MyBlogApplication'
@@ -36,15 +37,6 @@ sourceCompatibility = 1.8
 // BuildProd => gradle task 'copyWar' with argument : '-Pprod'
 // Npm => before Npm - gradle task 'clean compileJava', then : 'webpack:dev' 
 // SpringBoot => 'Build'
-
-allprojects {
-    idea {
-        module {
-            outputDir file("$buildDir/classes/java/main")
-            testOutputDir file("$buildDir/classes/test/main")
-        }
-    }
-}
 
 bootWar {
     mainClassName = "$mainClass"

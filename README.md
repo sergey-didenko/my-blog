@@ -68,6 +68,9 @@ or gradle task :
 
 #### Intellij IDEA configuration
 
+ - Press **Ctrl+Alt+S**, go to **Build, Execution, Deployment** -> **Build Tools** -> **Gradle** -> **Runner**
+ and enable checkbox **Delegate IDE build/run actions to gradle**
+
  - Build for production, 
  just create gradle **bootWar** task with argument **-Pprod**
 
