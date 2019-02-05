@@ -98,6 +98,6 @@ or gradle task :
 [Webpack]: https://webpack.github.io/
 
 [changelog]: https://github.com/sergey-didenko/my-blog/blob/master/CHANGELOG.md
-[features_todo]: https://github.com/sergey-didenko/my-blog/blob/master/doc/TODO_FEATURES.md
+[features_todo]: https://github.com/sergey-didenko/my-blog/labels/enhancement
 
 [idea_tutorial]: https://github.com/sergey-didenko/my-blog/blob/master/doc/IDEA_TUTORIAL.md

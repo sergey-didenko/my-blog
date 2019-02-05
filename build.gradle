@@ -28,7 +28,7 @@ project.buildDir = "$buildDir"
 
 group = 'com.sergey.didenko'
 def mainClass = 'com.sergey.didenko.myblog.MyBlogApplication'
-version = '0.4'
+version = '0.5'
 sourceCompatibility = 1.8
 
 //TODO : IDEA tasks :
