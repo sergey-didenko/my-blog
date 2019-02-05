@@ -15,13 +15,13 @@ limitations under the License.
 */
 
 import {Route} from '@angular/router';
-import {TestPageComponent} from './test-page.component';
+import {TestPageComponent} from 'app/home';
 
 export const TestPageRoute: Route = {
     path: 'test-page',
     component: TestPageComponent,
     data: {
-        authorities: [],
+        roles: [],
         pageTitle: 'home.test-page.title'
     }
 };
