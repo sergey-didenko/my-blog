@@ -1,6 +1,16 @@
 # Changelog
 
+<a name="0.5"></a>
+## [ver. 0.5] (2017-02-5)
+#### Features
+Added dependency:
+* Spring Security
+* io.jsonwebtoken:jjwt
 
+#### Bug Fixes
+[[Issue-2][]] Fixed build configuration
+
+[Issue-2]: https://github.com/sergey-didenko/my-blog/pull/8
 
 <a name="0.4"></a>
 ## [ver. 0.4] (2017-02-4)
