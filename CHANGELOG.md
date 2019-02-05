@@ -8,7 +8,7 @@ Added dependency:
 * io.jsonwebtoken:jjwt
 
 #### Bug Fixes
-[[Issue-2][]] Fixed build configuration
+[[Issue-2][]] Fixed builds, configuration
 
 [Issue-2]: https://github.com/sergey-didenko/my-blog/pull/8
 
