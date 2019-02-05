@@ -33,6 +33,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Languages } from 'app/shared/language/language.constants';
 
+import {MyBlogAuthModule} from 'app/auth/auth.module';
+
 @NgModule({
     imports: [
         BrowserAnimationsModule,
@@ -48,7 +50,12 @@ import { Languages } from 'app/shared/language/language.constants';
             }
         }),
         MyBlogSharedModule.forRoot(),
+
+        // modules
         MyBlogHomeModule,
+        MyBlogAuthModule,
+
+        // routing
         MyBlogAppRoutingModule
     ],
     declarations: [
