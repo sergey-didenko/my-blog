@@ -21,9 +21,9 @@ and therefore I hope it will be useful to someone.
 
 ## Features
 
-[Changelog][changelog]
+[Board][board]
 
-[TODO Features][features_todo]
+[Changelog][changelog]
 
 ## Technology stack
 **Front-end stack :**
@@ -112,6 +112,6 @@ or gradle task :
 [Webpack]: https://webpack.github.io/
 
 [changelog]: https://github.com/sergey-didenko/my-blog/blob/master/CHANGELOG.md
-[features_todo]: https://github.com/sergey-didenko/my-blog/labels/enhancement
+[board]: https://github.com/sergey-didenko/my-blog/projects/1
 
 [idea_tutorial]: https://github.com/sergey-didenko/my-blog/blob/master/doc/IDEA_TUTORIAL.md
