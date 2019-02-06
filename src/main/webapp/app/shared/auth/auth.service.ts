@@ -30,20 +30,16 @@ export class AuthService {
                 private principal: Principal) {
     }
 
-    login(loginDTO: LoginDTO): Observable<HttpResponse<UserDTO>> {
+    login(loginDTO: LoginDTO): Promise<HttpResponse<UserDTO>> {
         const req: Observable<HttpResponse<UserDTO>> = this.http.post<UserDTO>(SERVER_API_URL + 'authorization/login', loginDTO, { observe: 'response' });
 
-        this.processAuthResponse(req);
-
-        return req;
+        return this.processAuthResponse(req);
     }
 
-    register(registerDTO: RegisterDTO): Observable<HttpResponse<UserDTO>> {
+    register(registerDTO: RegisterDTO): Promise<HttpResponse<UserDTO>> {
         const req: Observable<HttpResponse<UserDTO>> = this.http.post<UserDTO>(SERVER_API_URL + 'authorization/register', registerDTO, { observe: 'response' });
 
-        this.processAuthResponse(req);
-
-        return req;
+        return this.processAuthResponse(req);
     }
 
     logout() {
@@ -54,8 +50,12 @@ export class AuthService {
      * Process Auth response and put it principal
      * @param req
      */
-    private processAuthResponse(req: Observable<HttpResponse<UserDTO>>) {
-        req.toPromise().then(response => this.principal.authenticateByResponse(response));
+    private processAuthResponse(req: Observable<HttpResponse<UserDTO>>): Promise<HttpResponse<UserDTO>> {
+        return req.toPromise().then(response => {
+            this.principal.authenticateByResponse(response);
+
+            return response;
+        });
     }
 
 }

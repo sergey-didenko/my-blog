@@ -52,7 +52,7 @@ export class RegisterComponent implements OnInit {
     }
 
     login() {
-        this.authService.register(this.registerDTO).toPromise().then(
+        this.authService.register(this.registerDTO).then(
             response => {
                 console.log(response);
                 if (response.status == 200) {

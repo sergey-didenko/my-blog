@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
     }
 
     login() {
-        this.authService.login(this.loginDTO).toPromise().then(
+        this.authService.login(this.loginDTO).then(
             response => {
                 console.log(response);
                 if (response.status == 200) {
