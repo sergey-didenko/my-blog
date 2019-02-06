@@ -15,6 +15,10 @@ as the project is developed "from scratch".
 The development process is as close as possible to the workflow,
 and therefore I hope it will be useful to someone.
 
+## Releases
+
+[[ver. 1.0] (2017-02-6)](https://github.com/sergey-didenko/my-blog/releases/tag/1.0)
+
 ## Features
 
 [Changelog][changelog]
