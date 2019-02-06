@@ -64,7 +64,7 @@ or gradle task :
 
 **Jar** Command to run binary
 
-    java -jar build/libs/*.war
+    java -jar build/*.war
 
 #### Intellij IDEA configuration
 

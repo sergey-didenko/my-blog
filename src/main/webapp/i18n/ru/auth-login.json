@@ -1,7 +1,12 @@
 {
     "auth": {
         "login": {
-            "title": "Авторизация"
+            "title": "Вход",
+            "form": {
+                "login": "Логин",
+                "password": "Пароль",
+                "button": "Вход"
+            }
         }
     }
 }

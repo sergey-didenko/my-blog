@@ -14,22 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import {Routes} from '@angular/router';
-import {LoginRoute} from 'app/auth/login/login.route';
-import {RegisterRoute} from 'app/auth/register/register.route';
-
-const componentChildrenRoute: Routes = [
-    // children component route here
-];
-
-export const MyBlogAuthRoute: Routes = [
-    {
-        path: 'auth',
-        children: componentChildrenRoute,
-        data: {
-            roles: []
-        }
-    },
-    ...LoginRoute,
-    ...RegisterRoute
-];
+export class UserDTO {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
+    roleSet: string[];
+}

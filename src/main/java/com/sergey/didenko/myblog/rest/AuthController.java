@@ -46,7 +46,7 @@ import java.util.Set;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/authorization")
 @Transactional
 public class AuthController {
 
@@ -66,7 +66,7 @@ public class AuthController {
     JwtProvider jwtProvider;
 
     /**
-     * localhost:8080/api/auth
+     * localhost:8080/authorization
      *
      * @return UserDTO if token exist
      */
@@ -77,7 +77,7 @@ public class AuthController {
     }
 
     /**
-     * localhost:8080/api/auth/login
+     * localhost:8080/authorization/login
      *
      * @param loginDTO
      * @return UserDTO and Authorization Header
@@ -92,7 +92,7 @@ public class AuthController {
     }
 
     /**
-     * localhost:8080/api/auth/register
+     * localhost:8080/authorization/register
      *
      * @param registerDTO
      * @return UserDTO and Authorization Header

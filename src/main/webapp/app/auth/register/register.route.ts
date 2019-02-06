@@ -14,14 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import {Route} from '@angular/router';
-import {RegisterComponent} from 'app/auth/register/register.component';
+import {Routes} from '@angular/router';
+import {RegisterPopupComponent} from 'app/auth/register/register.component';
 
-export const RegisterRoute: Route = {
-    path: 'register',
-    component: RegisterComponent,
-    data: {
-        roles: [],
-        pageTitle: 'auth.register.title'
+export const RegisterRoute: Routes = [
+    {
+        path: 'auth/register',
+        outlet: 'popup',
+        component: RegisterPopupComponent,
+        data: {
+            roles: [],
+            pageTitle: 'auth.register.title'
+        }
     }
-};
+];

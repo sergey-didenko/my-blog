@@ -22,7 +22,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbDatepickerConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Ng2Webstorage } from 'ngx-webstorage';
 
-import { MyBlogSharedModule } from 'app/shared';
+import { MyBlogSharedModule, AuthInterceptorProvider } from 'app/shared';
 import { MyBlogAppRoutingModule } from './app-routing.module';
 import { MyBlogHomeModule } from 'app/home';
 import * as moment from 'moment';
@@ -37,8 +37,8 @@ import {MyBlogAuthModule} from 'app/auth/auth.module';
 
 @NgModule({
     imports: [
-        BrowserAnimationsModule,
         BrowserModule,
+        BrowserAnimationsModule,
         Ng2Webstorage.forRoot({ prefix: 'myb', separator: '-' }),
         // configure the imports
         HttpClientModule,
@@ -66,7 +66,7 @@ import {MyBlogAuthModule} from 'app/auth/auth.module';
         FooterComponent
     ],
     providers: [
-
+        AuthInterceptorProvider
     ],
     bootstrap: [
         MainComponent

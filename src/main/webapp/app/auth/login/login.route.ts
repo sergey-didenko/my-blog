@@ -14,14 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import {Route} from '@angular/router';
-import {LoginComponent} from 'app/auth/login/login.component';
+import {Routes} from '@angular/router';
+import {LoginPopupComponent} from 'app/auth/login/login.component';
 
-export const LoginRoute: Route = {
-    path: 'login',
-    component: LoginComponent,
-    data: {
-        roles: [],
-        pageTitle: 'auth.login.title'
+export const LoginRoute: Routes = [
+    {
+        path: 'auth/login',
+        outlet: 'popup',
+        component: LoginPopupComponent,
+        data: {
+            roles: [],
+            pageTitle: 'auth.login.title'
+        }
     }
-};
+];

@@ -1,7 +1,14 @@
 {
     "auth": {
         "register": {
-            "title": "Register"
+            "title": "Registration",
+            "form": {
+                "login": "Login",
+                "name": "Name",
+                "email": "Email",
+                "password": "Password",
+                "button": "Register"
+            }
         }
     }
 }

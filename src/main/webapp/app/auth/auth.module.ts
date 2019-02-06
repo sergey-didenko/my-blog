@@ -19,11 +19,15 @@ import {RouterModule} from '@angular/router';
 import {MyBlogSharedModule} from 'app/shared';
 import {MyBlogAuthRoute} from 'app/auth/auth.route';
 
-import {LoginComponent} from 'app/auth/login/login.component';
-import {RegisterComponent} from 'app/auth/register/register.component';
+import {LoginComponent, LoginPopupComponent} from 'app/auth/login/login.component';
+import {RegisterComponent, RegisterPopupComponent} from 'app/auth/register/register.component';
+import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
         MyBlogSharedModule,
         RouterModule.forChild(MyBlogAuthRoute)
     ],
@@ -32,10 +36,15 @@ import {RegisterComponent} from 'app/auth/register/register.component';
     ],
     declarations: [
         LoginComponent,
-        RegisterComponent
+        LoginPopupComponent,
+        RegisterComponent,
+        RegisterPopupComponent
     ],
     entryComponents: [
-
+        LoginComponent,
+        LoginPopupComponent,
+        RegisterComponent,
+        RegisterPopupComponent
     ],
     providers: [
 

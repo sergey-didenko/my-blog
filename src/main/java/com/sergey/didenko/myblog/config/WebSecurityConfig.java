@@ -104,10 +104,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         .and()
             .authorizeRequests()
-            .antMatchers("/api/auth/login").permitAll()
-            .antMatchers("/api/auth/register").permitAll()
+            .antMatchers("/api/**").authenticated()
+            .antMatchers("/authorization").permitAll()
+            .antMatchers("/authorization/login").permitAll()
+            .antMatchers("/authorization/register").permitAll()
             .antMatchers("/api/test").permitAll()
-            .antMatchers("/api/test/**").permitAll()
-            .antMatchers("/api/**").authenticated();
+            .antMatchers("/api/test/**").permitAll();
+
     }
 }

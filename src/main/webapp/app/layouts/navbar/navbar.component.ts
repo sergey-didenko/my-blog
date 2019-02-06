@@ -16,12 +16,14 @@ limitations under the License.
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { SessionStorageService } from 'ngx-webstorage';
 
 import { VERSION } from 'app/app.constants';
-import { LanguageHelper } from 'app/shared';
+import {AuthService, LanguageHelper, Principal} from 'app/shared';
+import {BroadcastService} from 'app/shared/broadcast/broadcast.service';
 import { TranslateService } from '@ngx-translate/core';
+import {MatSnackBar} from '@angular/material';
+import {UserDTO} from 'app/shared/auth/dto/user-dto.model';
 
 @Component({
     selector: 'myb-navbar',
@@ -29,16 +31,20 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['navbar.scss']
 })
 export class NavbarComponent implements OnInit {
-    inProduction: boolean;
     isNavbarCollapsed: boolean;
     languages: any[];
-    modalRef: NgbModalRef;
     version: string;
+
+    user: UserDTO;
 
     constructor(private translateService: TranslateService,
                 private languageHelper: LanguageHelper,
                 private sessionStorage: SessionStorageService,
-                private router: Router) {
+                private router: Router,
+                public principal: Principal,
+                private broadcastService: BroadcastService,
+                private authService: AuthService,
+                private snackBar: MatSnackBar) {
         this.version = VERSION ? 'v' + VERSION : '';
         this.isNavbarCollapsed = true;
     }
@@ -46,6 +52,32 @@ export class NavbarComponent implements OnInit {
     ngOnInit() {
         this.languageHelper.getAll().then(languages => {
             this.languages = languages;
+        });
+
+        // add listener, waiting for Principal notification
+        this.broadcastService.listener('authorization_success').subscribe(() => {
+            this.getUser();
+        });
+
+        this.broadcastService.listener('authorization_end').subscribe(() => {
+            this.user = null;
+        });
+
+        // and then try to auth
+        this.getUser();
+    }
+
+    getUser() {
+        /**
+         * Try to get authorization
+         */
+        this.principal.identity().then(user => {
+            this.user = user;
+            if (user) {
+                console.log('Login successful from token storage, user name:' + this.user.name);
+            } else {
+                console.log('Not authorized, the token does not exist');
+            }
         });
     }
 
@@ -60,6 +92,15 @@ export class NavbarComponent implements OnInit {
 
     toggleNavbar() {
         this.isNavbarCollapsed = !this.isNavbarCollapsed;
+    }
+
+    logout() {
+        this.authService.logout();
+        this.translateService.get('global.auth.logout').toPromise().then(translate => {
+            this.snackBar.open(translate, '', {
+                duration: 2500
+            });
+        });
     }
 
 }

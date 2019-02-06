@@ -14,22 +14,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import {Routes} from '@angular/router';
-import {LoginRoute} from 'app/auth/login/login.route';
-import {RegisterRoute} from 'app/auth/register/register.route';
+import { Pipe, PipeTransform } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
-const componentChildrenRoute: Routes = [
-    // children component route here
-];
+@Pipe({ name: 'sanitizeHtml'})
 
-export const MyBlogAuthRoute: Routes = [
-    {
-        path: 'auth',
-        children: componentChildrenRoute,
-        data: {
-            roles: []
-        }
-    },
-    ...LoginRoute,
-    ...RegisterRoute
-];
+export class SanitizeHtmlPipe implements PipeTransform  {
+
+    constructor(private _sanitizer: DomSanitizer) { }
+
+    transform(value: string): SafeHtml {
+        return this._sanitizer.bypassSecurityTrustHtml(value);
+    }
+}

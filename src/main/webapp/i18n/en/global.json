@@ -1,10 +1,47 @@
 {
     "global": {
-        "title": "My_blog",
+        "title": "My Blog",
         "menu": {
             "home": "Home",
-            "language": "Language"
+            "language": "Language",
+            "account": {
+                "title": "Account",
+                "authorized": "My account",
+                "login": "Login",
+                "register": "Register",
+                "logout": "Logout"
+            },
+            "link": {
+                "title": "Links"
+            }
+        },
+        "auth": {
+            "login": {
+                "success": "Login successful!",
+                "fail": "Failed to sign in! Please check your credentials and try again."
+            },
+            "register": {
+                "success": "Registration successful!",
+                "fail": "Registration failed! Please try again later."
+            },
+            "logout": "Successfully logged out!"
+        },
+        "action": {
+            "generate": "Generate",
+            "download": "Download",
+            "upload": "Upload",
+            "history": "History",
+            "add": "Add",
+            "back": "Back",
+            "cancel": "Cancel",
+            "delete": "Delete",
+            "edit": "Edit",
+            "open": "Open",
+            "save": "Save",
+            "view": "View",
+            "search": "Search",
+            "clear": "Clear"
         }
     },
-    "footer": "copyright"
+    "copyright": "Sergey Didenko"
 }

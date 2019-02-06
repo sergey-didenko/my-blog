@@ -55,7 +55,12 @@ import {
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
+    MatFormFieldModule
 } from '@angular/material';
+import { CommonModule } from '@angular/common';
+
+import {HasAnyRoleDirective} from 'app/shared/auth/has-any-role.directive';
+import {SanitizeHtmlPipe} from 'app/shared/util/sanitize-html.pipe';
 
 @NgModule({
     imports: [
@@ -63,7 +68,8 @@ import {
         MyBlogSharedCommonModule
     ],
     declarations: [
-
+        HasAnyRoleDirective,
+        SanitizeHtmlPipe
     ],
     providers: [
         {
@@ -112,6 +118,11 @@ import {
         MatTabsModule,
         MatToolbarModule,
         MatTooltipModule,
+        MatFormFieldModule,
+        CommonModule,
+
+        HasAnyRoleDirective,
+        SanitizeHtmlPipe
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA

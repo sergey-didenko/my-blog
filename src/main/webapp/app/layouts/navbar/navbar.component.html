@@ -34,26 +34,54 @@
                 </mat-menu>
             </li>
 
+            <!-- Account section -->
+            <li class="nav-item">
+                <button class="nav-link" mat-button [matMenuTriggerFor]="htmlAccount">
+                    <mat-icon class="mat-18">account_box</mat-icon>
+                    <span *ngIf="!user && !principal.isAuthenticated()">{{'global.menu.account.title' | translate}}</span>
+                    <span *ngIf="user">{{'global.menu.account.authorized' | translate}} ({{user?.name.toUpperCase()}})</span>
+                </button>
+                <mat-menu #htmlAccount="matMenu">
+                    <a mat-menu-item
+                        *ngIf="!principal.isAuthenticated()"
+                        [routerLink]="[
+                            '/', {
+                                outlets: {
+                                    popup: 'auth/login'
+                                }
+                            }
+                        ]">
+                        {{'global.menu.account.login' | translate}}
+                    </a>
+                    <a mat-menu-item
+                        *ngIf="!principal.isAuthenticated()"
+                        [routerLink]="[
+                                '/', {
+                                outlets: {
+                                    popup: 'auth/register'
+                                }
+                            }
+                        ]">
+                        {{'global.menu.account.register' | translate}}
+                    </a>
+                    <a mat-menu-item *mybHasAnyRole="'ROLE_USER'" (click)="logout()">
+                        {{'global.menu.account.logout' | translate}}
+                    </a>
+                </mat-menu>
+            </li>
+
             <!-- Footer links -->
-            <li class="nav-item d-md-none d-lg-none" *ngIf="languages && languages.length > 1">
+            <li class="nav-item d-md-none d-lg-none">
                 <button class="nav-link" mat-button [matMenuTriggerFor]="htmlLinks">
                     <mat-icon class="mat-18">link</mat-icon>
-                    <span>Links</span>
+                    <span>{{'global.menu.link.title' | translate}}</span>
                 </button>
                 <mat-menu #htmlLinks="matMenu">
                     <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
                         Link 1
                     </a>
 
-                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
-                        Link 2
-                    </a>
-
                     <mat-divider></mat-divider>
-
-                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
-                        Link 1
-                    </a>
 
                     <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
                         Link 2

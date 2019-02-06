@@ -1,7 +1,12 @@
 {
     "auth": {
         "login": {
-            "title": "Login"
+            "title": "Sign in",
+            "form": {
+                "login": "Login",
+                "password": "Password",
+                "button": "Sign in"
+            }
         }
     }
 }

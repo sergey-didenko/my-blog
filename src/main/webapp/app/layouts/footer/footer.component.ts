@@ -14,10 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'myb-footer',
     templateUrl: './footer.component.html'
 })
-export class FooterComponent {}
+export class FooterComponent implements OnInit {
+
+    public year: number;
+
+    ngOnInit(): void {
+        this.year = new Date().getFullYear();
+    }
+
+}

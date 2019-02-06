@@ -1,7 +1,14 @@
 {
     "auth": {
         "register": {
-            "title": "Регистрация"
+            "title": "Регистрация",
+            "form": {
+                "login": "Логин",
+                "name": "Имя",
+                "email": "Email",
+                "password": "Пароль",
+                "button": "Зарегистрироваться"
+            }
         }
     }
 }

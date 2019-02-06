@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>{{'auth.register.title' | translate}}</h1>
+
+<div mat-dialog-content>
+    <form name="registerForm" role="form" novalidate #registerForm="ngForm">
+
+        <mat-form-field class="w-100">
+            <input matInput type="text" name="name" [(ngModel)]="registerDTO.name" [placeholder]="'auth.register.form.name' | translate" required minlength="3"/>
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+            <input matInput type="email" name="email" [(ngModel)]="registerDTO.email" [placeholder]="'auth.register.form.email' | translate" email required minlength="3"/>
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+            <input matInput type="text" name="username" [(ngModel)]="registerDTO.username" [placeholder]="'auth.register.form.login' | translate" required minlength="3"/>
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+            <input matInput type="password" name="password" [(ngModel)]="registerDTO.password" [placeholder]="'auth.register.form.password' | translate" required minlength="6"/>
+        </mat-form-field>
+
+    </form>
+</div>
+<div mat-dialog-actions  class="float-right">
+    <button mat-raised-button
+            (click)="cancel()">
+        <b>{{'global.action.cancel' | translate}}</b>
+    </button>
+    <button mat-raised-button
+            color="primary"
+            (click)="ok()"
+            [disabled]="registerForm.form.invalid">
+        <b>{{'auth.register.form.button' | translate}}</b>
+    </button>
+</div>
