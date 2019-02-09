@@ -21,6 +21,8 @@ and therefore I hope it will be useful to someone.
 
 ## Features
 
+[Documentation](https://doc.sergey-didenko.pro/) - DB Models, UML Diagrams
+
 [Board][board]
 
 [Changelog][changelog]
