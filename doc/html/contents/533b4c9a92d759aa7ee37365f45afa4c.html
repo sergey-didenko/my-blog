@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BlogContentPozition</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>BlogContentPozition</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-ERDEntity"></span>
+          ERDEntity
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>My Blog</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='d13befe919fe610741bf83bee9953f53.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>DB Model</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='533b4c9a92d759aa7ee37365f45afa4c.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogContentPozition</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <span class="label label-info">none</span>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+
+      <!-- Operations -->
+
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+      <section>
+        <h3>Columns</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="20%">Name</th>
+            <th width="20%">Type</th>
+            <th width="10%">Primary Key</th>
+            <th width="10%">Foreign Key</th>
+            <th width="20%">Reference To</th>
+            <th width="10%">Nullable</th>
+            <th width="10%">Unique</th>
+          </tr>
+          
+          <tr>
+            <td><a href="30fd179ca0bb7d3379d2326310d2802f.html">id</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="cc8cb97276893a5115dbd94917951156.html">blogOwnerId</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='055b60e184ee14b7f0afa347f5916285.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>User</a> ::
+              
+              <a href='6f9a8be65d7d1ccf7ce6276f32dedce9.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="e82e224f248d71910c94f92eb5089a31.html">blogContentType</a></td>
+            <td>Enum</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="7aa45f8b8f0703addb6f94da2b728507.html">blogTextContentId</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='681befe5d8e918c7d89f4e3884df3ad2.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogTextContent</a> ::
+              
+              <a href='885e5a4e4f1c054917f991dbab6f860b.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="19f35a0330375b0f28df12b06d727612.html">blogPreviewContentId</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='1b49ff4cc5440abef60dd8cd49157302.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogPreviewContent</a> ::
+              
+              <a href='4b0284c4ecaaf87fd60bc687dbefda39.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="ee3c19c816e1c950c513c86a850c181a.html">blogAttachmentContentId</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='10ebe5a2fb898f16caef9ad983d37c37.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogAttachmentContent</a> ::
+              
+              <a href='ebf83564cedea83ecdf7aca2f13c9a06.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="8b66b715d3232fb37f18dd0667f148a3.html">pozition</a></td>
+            <td>INTEGER(4)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+      <section>
+        <h3>Related Entities</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="25%">Entity</th>
+            <th width="25%">Cardinality</th>
+            <th width="25%">Reference Name</th>
+            <th width="25%">Relationship</th>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='43d29f7ba9b8ceb319a9d244de4f941e.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>Blog</a></td>
+            <td>1</td>
+            <td>id</td>
+            <td><a href='1463c8f5714c005346b9239ef720e95b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contains contents (Blog—BlogContentPozition)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='681befe5d8e918c7d89f4e3884df3ad2.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogTextContent</a></td>
+            <td>0..1</td>
+            <td>id</td>
+            <td><a href='2e1b8c9e732fb207c2917161c59e0d29.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>at this pozition has text (BlogContentPozition—BlogTextContent)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='1b49ff4cc5440abef60dd8cd49157302.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogPreviewContent</a></td>
+            <td>0..1</td>
+            <td>id</td>
+            <td><a href='b990f6e28c12f4d1fe6f3acae4eb05cd.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>at this pozition has preview (BlogContentPozition—BlogPreviewContent)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='10ebe5a2fb898f16caef9ad983d37c37.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogAttachmentContent</a></td>
+            <td>0..1</td>
+            <td>id</td>
+            <td><a href='249357af47d7369f7ef9ddb56a213cb6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>at this pozition has attachment (BlogContentPozition—BlogAttachmentContent)</a></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>BlogContentPozition</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='1463c8f5714c005346b9239ef720e95b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contains contents (Blog—BlogContentPozition)</a></li>
+        
+        <li><a href='2e1b8c9e732fb207c2917161c59e0d29.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>at this pozition has text (BlogContentPozition—BlogTextContent)</a></li>
+        
+        <li><a href='b990f6e28c12f4d1fe6f3acae4eb05cd.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>at this pozition has preview (BlogContentPozition—BlogPreviewContent)</a></li>
+        
+        <li><a href='249357af47d7369f7ef9ddb56a213cb6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>at this pozition has attachment (BlogContentPozition—BlogAttachmentContent)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='1463c8f5714c005346b9239ef720e95b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contains contents (Blog—BlogContentPozition)</a></li>
+        
+    </ul>
+</section>
+
+
+
+    </div>
+  </body>
+</html>

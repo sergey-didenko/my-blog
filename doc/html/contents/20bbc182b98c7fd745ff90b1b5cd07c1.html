@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BlogGroup</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>BlogGroup</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-ERDEntity"></span>
+          ERDEntity
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>My Blog</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='d13befe919fe610741bf83bee9953f53.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>DB Model</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='20bbc182b98c7fd745ff90b1b5cd07c1.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogGroup</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <span class="label label-info">none</span>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+
+      <!-- Operations -->
+
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+      <section>
+        <h3>Columns</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="20%">Name</th>
+            <th width="20%">Type</th>
+            <th width="10%">Primary Key</th>
+            <th width="10%">Foreign Key</th>
+            <th width="20%">Reference To</th>
+            <th width="10%">Nullable</th>
+            <th width="10%">Unique</th>
+          </tr>
+          
+          <tr>
+            <td><a href="8ce76f6d001bce3027f5c8559d832a9c.html">id</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="839c8fc921981462d6527f6c8a5beb4a.html">userOwnerId</a></td>
+            <td>BIGINT(20)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='055b60e184ee14b7f0afa347f5916285.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>User</a> ::
+              
+              <a href='6f9a8be65d7d1ccf7ce6276f32dedce9.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="489319310198fb6eb3f69f1d25257604.html">title</a></td>
+            <td>VARCHAR(255)</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="25bb66b03d882603ee8dba4b659b2fd5.html">description</a></td>
+            <td>LONGTEXT</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+      <section>
+        <h3>Related Entities</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="25%">Entity</th>
+            <th width="25%">Cardinality</th>
+            <th width="25%">Reference Name</th>
+            <th width="25%">Relationship</th>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='055b60e184ee14b7f0afa347f5916285.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>User</a></td>
+            <td>1</td>
+            <td>id</td>
+            <td><a href='009022a00e41bccd82a18f34005fe2c4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>has blog group (User—BlogGroup)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='43d29f7ba9b8ceb319a9d244de4f941e.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>Blog</a></td>
+            <td>0..*</td>
+            <td>blogGroupOwnerId</td>
+            <td><a href='39c4f6f0abc494cea5ecac2c82af4125.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contains blogs (BlogGroup—Blog)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='1b49ff4cc5440abef60dd8cd49157302.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>BlogPreviewContent</a></td>
+            <td>0..*</td>
+            <td>blogGroupId</td>
+            <td><a href='a2bb12c2d707c9adfaa1d4ab0f125d06.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>link to blog group (BlogGroup—BlogPreviewContent)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='628c81a3f74aa68c25054dda704c587a.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>ProjectTeamBlogGroup</a></td>
+            <td>0..*</td>
+            <td>BlogGroupId</td>
+            <td><a href='9f2b511688468124c6d2d6affa43c44c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>link to shared blog groups (BlogGroup—ProjectTeamBlogGroup)</a></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>BlogGroup</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='009022a00e41bccd82a18f34005fe2c4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>has blog group (User—BlogGroup)</a></li>
+        
+        <li><a href='39c4f6f0abc494cea5ecac2c82af4125.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>contains blogs (BlogGroup—Blog)</a></li>
+        
+        <li><a href='a2bb12c2d707c9adfaa1d4ab0f125d06.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>link to blog group (BlogGroup—BlogPreviewContent)</a></li>
+        
+        <li><a href='9f2b511688468124c6d2d6affa43c44c.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>link to shared blog groups (BlogGroup—ProjectTeamBlogGroup)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='009022a00e41bccd82a18f34005fe2c4.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>has blog group (User—BlogGroup)</a></li>
+        
+    </ul>
+</section>
+
+
+
+    </div>
+  </body>
+</html>
