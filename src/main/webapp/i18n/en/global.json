@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "My Blog",
+        "title": "Sergey Didenko blog",
         "menu": {
             "home": "Home",
             "language": "Language",
@@ -11,9 +11,13 @@
                 "register": "Register",
                 "logout": "Logout"
             },
-            "link": {
-                "title": "Links"
-            }
+            "project": {
+                "title": "My Blog project",
+                "doc": "Documentation",
+                "board": "Project Board",
+                "src": "Source on Github"
+            },
+            "pages": "Pages"
         },
         "auth": {
             "login": {

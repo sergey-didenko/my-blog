@@ -14,13 +14,46 @@ h4 {
 }
 
 a {
-    color: #533f03;
+    color: #505050;
     font-weight: bold;
 }
 
 a:hover {
-    color: #533f03;
+    color: #505050;
     font-weight: bold;
+}
+
+b, strong {
+    font-weight: bold !important;
+}
+
+.container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
 }
 
 /* ==========================================================================
@@ -80,7 +113,7 @@ Generic styles
 }
 .footer-link {
     width: 100%;
-    /*text-align: left !important;*/
+    text-align: left !important;
 }
 
 /* ==========================================================================

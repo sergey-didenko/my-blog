@@ -21,6 +21,8 @@ import { MyBlogSharedModule } from 'app/shared';
 import { HOME_ROUTES } from './';
 import {HomeComponent} from 'app/home/home/home.component';
 import {TestPageComponent} from 'app/home/test-page/test-page.component';
+import {AboutPageComponent} from 'app/home/about-page/about-page.component';
+import {AboutProjectPageComponent} from 'app/home/about-project-page/about-project-page.component';
 
 @NgModule({
     imports: [
@@ -29,7 +31,9 @@ import {TestPageComponent} from 'app/home/test-page/test-page.component';
     ],
     declarations: [
         HomeComponent,
-        TestPageComponent
+        TestPageComponent,
+        AboutPageComponent,
+        AboutProjectPageComponent
     ],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA

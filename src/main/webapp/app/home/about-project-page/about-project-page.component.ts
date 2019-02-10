@@ -14,18 +14,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import {Route} from '@angular/router';
-import {TestPageComponent} from 'app/home';
-import {UserRouteAccessService} from 'app/shared';
+import {Component, OnInit} from '@angular/core';
 
-export const TestPageRoute: Route = {
-    path: 'test-page',
-    component: TestPageComponent,
-    data: {
-        roles: [
-            'ROLE_USER'
-        ],
-        pageTitle: 'home.test-page.head-title'
-    },
-    canActivate: [UserRouteAccessService]
-};
+@Component({
+    selector: 'myb-about-project-page',
+    templateUrl: 'about-project-page.component.html'
+})
+export class AboutProjectPageComponent implements OnInit {
+
+    constructor() {}
+
+    ngOnInit(): void {}
+
+}

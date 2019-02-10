@@ -17,6 +17,8 @@ limitations under the License.
 import {Routes} from '@angular/router';
 import {HomeComponent} from 'app/home/home/home.component';
 import {TestPageRoute} from 'app/home/test-page/test-page.route';
+import {AboutPageRoute} from 'app/home/about-page/about-page.route';
+import {AboutProjectPageRoute} from 'app/home/about-project-page/about-project-page.route';
 
 export const HOME_ROUTES: Routes = [
     {
@@ -24,8 +26,10 @@ export const HOME_ROUTES: Routes = [
         component: HomeComponent,
         data: {
             authorities: [],
-            pageTitle: 'home.title'
+            pageTitle: 'home.head-title'
         }
     },
-    TestPageRoute
+    TestPageRoute,
+    AboutPageRoute,
+    AboutProjectPageRoute
 ];

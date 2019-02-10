@@ -1,6 +1,7 @@
 {
     "home": {
         "test-page": {
+            "head-title": "Sergey Didenko blog - Test page",
             "title": "Test"
         }
     }

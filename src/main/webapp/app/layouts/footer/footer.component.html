@@ -1,49 +1,68 @@
 <div class="footer container-fluid">
     <div class="d-none d-md-block d-lg-block">
-        <div class="row justify-content-md-center text-center">
-            <div class="col-md-2">
-                <div class="m-4">
-                    <h5 class="text-white mb-3">Links 1</h5>
+        <div class="row justify-content-md-center">
+<!--            <div class="col-md-3 mt-4">
+                <div class="row mt-3">
+                    <div class="col-auto">
+                        <img width="75px" src="/assets/images/logo.png"/>
+                    </div>
 
-                    <ul class="footer-links">
-                        <li>
-                            <a mat-button class="footer-link" routerLink="/">Item 1</a>
-                        </li>
-                        <li>
-                            <a mat-button class="footer-link" routerLink="/">Item 2</a>
-                        </li>
-                    </ul>
+                    <div class="col-auto p-0 mt-auto mb-auto">
+                        <h4>Sergey Didenko</h4>
+                        <span>Full Stack Developer</span>
+                    </div>
                 </div>
+                <small>JavaEE, Spring, Hibernate, Angular/TypeScript, Android</small>
+            </div>-->
+
+            <div class="col-md-3 mt-4 text-center">
+                <img class="w-40 m-3" src="/assets/images/logo_2.png"/>
+
+                <h4>Full Stack Developer</h4>
+                <small>JavaEE, Spring, Hibernate, Angular/TypeScript, Android</small>
             </div>
 
             <div class="col-md-2">
-                <div class="m-4">
-                    <h5 class="text-white mb-3">Links 2</h5>
+                <h6 class="text-white m-3">{{'global.menu.pages' | translate}}</h6>
 
-                    <ul class="footer-links">
-                        <li>
-                            <a mat-button class="footer-link" routerLink="/">Item 1</a>
-                        </li>
-                        <li>
-                            <a mat-button class="footer-link" routerLink="/">Item 2</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="footer-links">
+                    <li>
+                        <a mat-button class="footer-link" routerLink="/">{{'global.menu.home' | translate}}</a>
+                    </li>
+                    <li>
+                        <a mat-button class="footer-link" routerLink="/about-page">{{'home.about-page.title' | translate}}</a>
+                    </li>
+                    <li>
+                        <a mat-button class="footer-link" routerLink="/test-page">{{'home.test-page.title' | translate}}</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="col-md-2">
-                <div class="m-4">
-                    <h5 class="text-white mb-3">Links 3</h5>
+                <h6 class="text-white m-3">{{'global.menu.project.title' | translate}}</h6>
 
-                    <ul class="footer-links">
-                        <li>
-                            <a mat-button class="footer-link" routerLink="/">Item 1</a>
-                        </li>
-                        <li>
-                            <a mat-button class="footer-link" routerLink="/">Item 2</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="footer-links">
+                    <li>
+                        <a mat-button class="footer-link" routerLink="/about-project-page">
+                            {{'home.about-project-page.title' | translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a mat-button class="footer-link" href="https://doc.sergey-didenko.pro" target="_blank">
+                            {{'global.menu.project.doc' | translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a mat-button class="footer-link" href="https://github.com/sergey-didenko/my-blog/projects/1" target="_blank">
+                            {{'global.menu.project.board' | translate}}
+                        </a>
+                    </li>
+                    <li>
+                        <a mat-button class="footer-link" href="https://git.sergey-didenko.pro/my-blog" target="_blank">
+                            {{'global.menu.project.src' | translate}}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

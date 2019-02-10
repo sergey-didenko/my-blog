@@ -1,6 +1,6 @@
 {
-  "name": "MyBlog",
-  "short_name": "MyBlog",
+  "name": "Sergey Didenko blog",
+  "short_name": "Sergey Didenko blog",
   "icons": [
         {
             "src": "./assets/images/logo.svg",

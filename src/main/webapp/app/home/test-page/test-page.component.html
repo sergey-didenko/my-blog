@@ -1,28 +1,28 @@
-<mat-card>
-    <a routerLink="/">{{'global.menu.home' | translate}}</a> / {{'home.test-page.title' | translate}}
-</mat-card>
+<div class="container">
+    <div class="mb-3">
+        <a routerLink="/">{{'global.menu.home' | translate}}</a> / {{'home.test-page.title' | translate}}
+    </div>
 
-<mat-card class="mt-3">
-    <mat-card-title>
-        <div class="row">
-            <div class="col">
-                <b>{{'home.test-page.title' | translate}}</b>
-                <div class="float-right">
+    <mat-card class="mt-3">
+        <mat-card-title>
+            <div class="row">
+                <div class="col">
+                    <b>{{'home.test-page.title' | translate}}</b>
+                    <div class="float-right">
                     <span>
                         <button mat-raised-button color="primary">
                         <mat-icon class="mat-18">add</mat-icon>
                         <span>Add</span>
                     </button>
                     </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </mat-card-title>
+        </mat-card-title>
 
-    <mat-card-content>
-        {{'home.test-page.title' | translate}}...
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-    </mat-card-content>
-</mat-card>
-
-
+        <mat-card-content>
+            {{'home.test-page.title' | translate}}...
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+        </mat-card-content>
+    </mat-card>
+</div>

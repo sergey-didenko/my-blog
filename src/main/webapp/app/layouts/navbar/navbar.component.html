@@ -9,10 +9,39 @@
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                <button class="nav-link" mat-button routerLink="/" (click)="collapseNavbar()">
-                    <mat-icon class="mat-18">home</mat-icon>
-                    {{'global.menu.home' | translate}}
+                <button class="nav-link" mat-button routerLink="/about-page" (click)="collapseNavbar()">
+                    <mat-icon class="mat-18">info</mat-icon>
+                    {{'home.about-page.title' | translate}}
                 </button>
+            </li>
+
+            <!-- Project links -->
+            <li class="nav-item">
+                <button class="nav-link" mat-button [matMenuTriggerFor]="htmlProject">
+                    <mat-icon class="mat-18">public</mat-icon>
+                    <span>{{'global.menu.project.title' | translate}}</span>
+                </button>
+                <mat-menu #htmlProject="matMenu">
+                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/about-project-page">
+                        <mat-icon class="mat-18">info</mat-icon>
+                        {{'home.about-project-page.title' | translate}}
+                    </a>
+
+                    <a mat-menu-item (click)="collapseNavbar();" href="https://doc.sergey-didenko.pro" target="_blank">
+                        <mat-icon class="mat-18">receipt</mat-icon>
+                        {{'global.menu.project.doc' | translate}}
+                    </a>
+
+                    <a mat-menu-item (click)="collapseNavbar();" href="https://github.com/sergey-didenko/my-blog/projects/1" target="_blank">
+                        <mat-icon class="mat-18">ballot</mat-icon>
+                        {{'global.menu.project.board' | translate}}
+                    </a>
+
+                    <a mat-menu-item (click)="collapseNavbar();" href="https://git.sergey-didenko.pro/my-blog" target="_blank">
+                        <mat-icon class="mat-18">link</mat-icon>
+                        {{'global.menu.project.src' | translate}}
+                    </a>
+                </mat-menu>
             </li>
 
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
@@ -69,25 +98,7 @@
                     </a>
                 </mat-menu>
             </li>
-
-            <!-- Footer links -->
-            <li class="nav-item d-md-none d-lg-none">
-                <button class="nav-link" mat-button [matMenuTriggerFor]="htmlLinks">
-                    <mat-icon class="mat-18">link</mat-icon>
-                    <span>{{'global.menu.link.title' | translate}}</span>
-                </button>
-                <mat-menu #htmlLinks="matMenu">
-                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
-                        Link 1
-                    </a>
-
-                    <mat-divider></mat-divider>
-
-                    <a mat-menu-item (click)="collapseNavbar();" routerLink="/">
-                        Link 2
-                    </a>
-                </mat-menu>
-            </li>
+            
         </ul>
     </div>
 </nav>

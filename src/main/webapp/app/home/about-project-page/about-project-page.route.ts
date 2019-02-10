@@ -15,17 +15,13 @@ limitations under the License.
 */
 
 import {Route} from '@angular/router';
-import {TestPageComponent} from 'app/home';
-import {UserRouteAccessService} from 'app/shared';
+import {AboutProjectPageComponent} from 'app/home/about-project-page/about-project-page.component';
 
-export const TestPageRoute: Route = {
-    path: 'test-page',
-    component: TestPageComponent,
+export const AboutProjectPageRoute: Route = {
+    path: 'about-project-page',
+    component: AboutProjectPageComponent,
     data: {
-        roles: [
-            'ROLE_USER'
-        ],
-        pageTitle: 'home.test-page.head-title'
-    },
-    canActivate: [UserRouteAccessService]
+        roles: [],
+        pageTitle: 'home.about-project-page.head-title'
+    }
 };

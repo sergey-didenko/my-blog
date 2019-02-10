@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="mb-3">
+        <a routerLink="/">{{'global.menu.home' | translate}}</a> / {{'home.about-project-page.title' | translate}}
+    </div>
+
+    <h1>{{'home.about-project-page.title' | translate}}</h1>
+
+    <div [innerHTML]="'home.about-project-page.ul-title' | translate">
+        <p>
+            <a href="https://git.sergey-didenko.pro/my-blog" target="_blank">The project</a> was created to solve several problems:
+        </p>
+    </div>
+
+    <ul>
+        <li [innerHTML]="'home.about-project-page.li-1' | translate">Develop the right technology stack</li>
+        <li [innerHTML]="'home.about-project-page.li-2' | translate">Develop a convenient and flexible <b>blog</b> using the latest technology</li>
+        <li [innerHTML]="'home.about-project-page.li-3' | translate">To consolidate knowledge in the development and try new solutions</li>
+        <li [innerHTML]="'home.about-project-page.li-4' | translate">To consolidate knowledge in project management</li>
+        <li [innerHTML]="'home.about-project-page.li-5' | translate">
+            <b>Educational material</b> for novice programmers, as the project is developed "from scratch". <br>
+            The development process is as close as possible to the workflow, <br>
+            and therefore I hope it will be useful to someone.
+        </li>
+    </ul>
+
+    <p>
+        <a href="https://doc.sergey-didenko.pro" target="_blank">{{'home.about-project-page.link-1' | translate}}</a><br>
+        <a href="https://github.com/sergey-didenko/my-blog/projects/1" target="_blank">{{'home.about-project-page.link-2' | translate}}</a><br>
+        <a href="https://github.com/sergey-didenko/my-blog/labels/Feature" target="_blank">{{'home.about-project-page.link-3' | translate}}</a><br>
+        <a href="https://github.com/sergey-didenko/my-blog/blob/master/CHANGELOG.md" target="_blank">{{'home.about-project-page.link-4' | translate}}</a>
+    </p>
+
+    <p [innerHTML]="'home.about-project-page.source' | translate">
+        Project sources page available on <a href="https://git.sergey-didenko.pro/my-blog" target="_blank">https://git.sergey-didenko.pro/my-blog</a>
+    </p>
+
+    <p [innerHTML]="'home.about-project-page.follow' | translate">
+        Also you can follow my git account <a href="https://git.sergey-didenko.pro" target="_blank">https://git.sergey-didenko.pro</a><br>
+        to get the latest updates.
+    </p>
+</div>

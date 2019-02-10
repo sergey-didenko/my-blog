@@ -1,37 +1,22 @@
-<div class="row">
-    <div class="col-md-12">
-        <h1 class="display-4">{{'home.title' | translate}}</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{'home.title' | translate}}</h1>
 
-        <p>
-            My name is Sergey Didenko.
-            It's my personal open source blog project, who using on my web page.
-        </p>
+            <p [innerHTML]="'home.p-1' | translate">
+                Once upon a time there was a programmer, he developed applications...<br>
+                And once he decided to write a couple of articles, share experiences,show beautiful code, and even thought about the ideal structure of the application.
+            </p>
 
-        <p>
-            <a href="https://git.sergey-didenko.pro/my-blog" target="_blank">The project</a> was created to solve several problems:
-        </p>
+            <p [innerHTML]="'home.p-2' | translate">
+                I am that developer :)
+            </p>
 
-        <ul>
-            <li>Develop the right technology stack</li>
-            <li>Develop a convenient and flexible <b>blog</b> using the latest technology</li>
-            <li>To consolidate knowledge in the development and try new solutions</li>
-            <li>To consolidate knowledge in project management</li>
-            <li><b>Educational material</b> for novice programmers, as the project is developed "from scratch". The development process is as close as possible to the workflow, and therefore I hope it will be useful to someone.</li>
-        </ul>
+            <p [innerHTML]="'home.p-3' | translate">
+                This blog is also an open source project, maybe it will be useful to you. And also you can read a couple of my articles,<br>
+                when i finish the blog module.
+            </p>
 
-        <p>
-            Project sources page available on <a href="https://git.sergey-didenko.pro/my-blog" target="_blank">https://git.sergey-didenko.pro/my-blog</a><br>
-
-            <a href="https://doc.sergey-didenko.pro" target="_blank">DB Models, UML Diagrams</a><br>
-            <a href="https://github.com/sergey-didenko/my-blog/blob/master/CHANGELOG.md" target="_blank">Changelog</a><br>
-            <a href="https://github.com/sergey-didenko/my-blog/labels/enhancement" target="_blank">TODO Features</a>
-        </p>
-
-        <p>
-            Also you can follow my git account <a href="https://git.sergey-didenko.pro" target="_blank">https://git.sergey-didenko.pro</a><br>
-            to get the latest updates.
-        </p>
-
-        <br><br><br><br><br>
+        </div>
     </div>
 </div>

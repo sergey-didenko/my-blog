@@ -1,0 +1,20 @@
+{
+    "home": {
+        "about-project-page": {
+            "head-title": "Sergey Didenko blog - About My Blog project",
+            "title": "About My Blog project",
+            "ul-title": "<p><a href=\"https://git.sergey-didenko.pro/my-blog\" target=\"_blank\">The project</a> was created to solve several problems:</p>",
+            "li-1": "Develop the right technology stack",
+            "li-2": "Develop a convenient and flexible <b>blog</b> using the latest technology",
+            "li-3": "To consolidate knowledge in the development and try new solutions",
+            "li-4": "To consolidate knowledge in project management",
+            "li-5": "<b>Educational material</b> for novice programmers, as the project is developed \"from scratch\". <br>The development process is as close as possible to the workflow, <br>and therefore I hope it will be useful to someone.",
+            "link-1": "Documentation, DB Models, UML",
+            "link-2": "Project Board",
+            "link-3": "TODO Features",
+            "link-4": "Changelog",
+            "source": "Project sources page available on <a href=\"https://git.sergey-didenko.pro/my-blog\" target=\"_blank\">https://git.sergey-didenko.pro/my-blog</a>",
+            "follow": "Also you can follow my Git account <a href=\"https://git.sergey-didenko.pro\" target=\"_blank\">https://git.sergey-didenko.pro</a><br>to get the latest updates."
+        }
+    }
+}
