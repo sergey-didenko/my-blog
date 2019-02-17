@@ -17,6 +17,7 @@ limitations under the License.
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRouteSnapshot, NavigationEnd, NavigationError } from '@angular/router';
 import {LanguageHelper} from 'app/shared';
+import {isNullOrUndefined} from 'util';
 
 @Component({
     selector: 'myb-main',
@@ -26,11 +27,16 @@ export class MainComponent implements OnInit {
     constructor(private languageHelper: LanguageHelper, private router: Router) {}
 
     private getPageTitle(routeSnapshot: ActivatedRouteSnapshot) {
-        let title: string = routeSnapshot.data && routeSnapshot.data['pageTitle'] ? routeSnapshot.data['pageTitle'] : 'myBlogApp';
-        if (routeSnapshot.firstChild) {
-            title = this.getPageTitle(routeSnapshot.firstChild) || title;
+        const title: string = routeSnapshot.data && routeSnapshot.data['pageTitle'] ? routeSnapshot.data['pageTitle'] : null;
+        if (!isNullOrUndefined(title)) {
+            this.languageHelper.updateTitle(title);
         }
-        return title;
+
+        let titleKey: string = routeSnapshot.data && routeSnapshot.data['pageTitleKey'] ? routeSnapshot.data['pageTitleKey'] : 'myBlogApp';
+        if (routeSnapshot.firstChild) {
+            titleKey = this.getPageTitle(routeSnapshot.firstChild) || titleKey;
+        }
+        return titleKey;
     }
 
     ngOnInit() {
