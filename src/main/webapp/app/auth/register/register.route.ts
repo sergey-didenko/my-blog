@@ -24,7 +24,7 @@ export const RegisterRoute: Routes = [
         component: RegisterPopupComponent,
         data: {
             roles: [],
-            pageTitle: 'auth.register.title'
+            pageTitleKey: 'auth.register.title'
         }
     }
 ];

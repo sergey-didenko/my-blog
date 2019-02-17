@@ -26,7 +26,8 @@ export const HOME_ROUTES: Routes = [
         component: HomeComponent,
         data: {
             authorities: [],
-            pageTitle: 'home.head-title'
+            pageTitle: 'Sergey Didenko blog',
+            pageTitleKey: 'home.head-title'
         }
     },
     TestPageRoute,

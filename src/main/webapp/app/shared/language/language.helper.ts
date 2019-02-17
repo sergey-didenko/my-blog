@@ -50,7 +50,7 @@ export class LanguageHelper {
      * Update the window title using params in the following
      * order:
      * 1. titleKey parameter
-     * 2. $state.$current.data.pageTitle (current state page title)
+     * 2. $state.$current.data.pageTitleKey (current state page title)
      * 3. 'global.title'
      */
     updateTitle(titleKey?: string) {
@@ -72,7 +72,7 @@ export class LanguageHelper {
     }
 
     private getPageTitle(routeSnapshot: ActivatedRouteSnapshot) {
-        let title: string = routeSnapshot.data && routeSnapshot.data['pageTitle'] ? routeSnapshot.data['pageTitle'] : 'myBlogApp';
+        let title: string = routeSnapshot.data && routeSnapshot.data['pageTitleKey'] ? routeSnapshot.data['pageTitleKey'] : 'myBlogApp';
         if (routeSnapshot.firstChild) {
             title = this.getPageTitle(routeSnapshot.firstChild) || title;
         }

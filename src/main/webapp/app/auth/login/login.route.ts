@@ -24,7 +24,7 @@ export const LoginRoute: Routes = [
         component: LoginPopupComponent,
         data: {
             roles: [],
-            pageTitle: 'auth.login.title'
+            pageTitleKey: 'auth.login.title',
         }
     }
 ];

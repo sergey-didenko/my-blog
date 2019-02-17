@@ -22,6 +22,7 @@ export const AboutProjectPageRoute: Route = {
     component: AboutProjectPageComponent,
     data: {
         roles: [],
-        pageTitle: 'home.about-project-page.head-title'
+        pageTitle: 'Sergey Didenko blog - About My Blog project',
+        pageTitleKey: 'home.about-project-page.head-title',
     }
 };

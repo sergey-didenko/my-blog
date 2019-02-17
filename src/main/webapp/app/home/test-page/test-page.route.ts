@@ -25,7 +25,8 @@ export const TestPageRoute: Route = {
         roles: [
             'ROLE_USER'
         ],
-        pageTitle: 'home.test-page.head-title'
+        pageTitle: 'Sergey Didenko blog - Test page',
+        pageTitleKey: 'home.test-page.head-title'
     },
     canActivate: [UserRouteAccessService]
 };
