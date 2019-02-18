@@ -3,6 +3,233 @@
         <a routerLink="/">{{'global.menu.home' | translate}}</a> / {{'home.about-page.title' | translate}}
     </div>
 
-    <h1>{{'home.about-page.title' | translate}}</h1>
+    <div class="row">
+        <div class="col-md-2 text-center">
+            <img class="w-100" src="/assets/images/me.jpg" [alt]="'copyright' | translate">
+        </div>
+        <div class="col-md-10 mt-auto pt-2 pt-md-0 text-center text-md-left">
+            <h1 class="m-0">{{'copyright' | translate}}</h1>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-2 text-md-right">
+            <h5>{{'home.about-page.title' | translate}}</h5>
+        </div>
+        <div class="col-md-10">
+            <div class="mt-1">
+                <p [innerHTML]="'home.about-page.about.p-1' | translate"></p>
+
+                <p [innerHTML]="'home.about-page.about.p-2' | translate"></p>
+
+                <p [innerHTML]="'home.about-page.about.p-3' | translate"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-2 text-md-right">
+            <h5>{{'home.about-page.projects.title' | translate}}</h5>
+        </div>
+        <div class="col-md-10">
+            <div class="row mt-1">
+                <div class="col-12">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'global.menu.project.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <div [innerHTML]="'home.about-project-page.ul-title' | translate"></div>
+
+                            <ul>
+                                <li [innerHTML]="'home.about-project-page.li-1' | translate"></li>
+                                <li [innerHTML]="'home.about-project-page.li-2' | translate"></li>
+                                <li [innerHTML]="'home.about-project-page.li-3' | translate"></li>
+                                <li [innerHTML]="'home.about-project-page.li-4' | translate"></li>
+                                <li [innerHTML]="'home.about-project-page.li-5' | translate"></li>
+                            </ul>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-project-page.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-project-page.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.8.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.8.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.8.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.8.technologies' | translate}}
+                            </p>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.7.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.7.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.7.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.7.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.6.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.6.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.6.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.6.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.5.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.5.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.5.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.5.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.4.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.4.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.4.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.4.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.3.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.3.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.3.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.3.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.2.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.2.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.2.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.2.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <mat-accordion>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <strong>{{'home.about-page.projects.1.title' | translate}}</strong>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <p [innerHTML]="'home.about-page.projects.1.description' | translate"></p>
+
+                            <p>
+                                {{'home.about-page.projects.languages' | translate}}{{'home.about-page.projects.1.languages' | translate}}
+                                <br>
+                                {{'home.about-page.projects.technologies' | translate}}{{'home.about-page.projects.1.technologies' | translate}}
+                            </p>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>

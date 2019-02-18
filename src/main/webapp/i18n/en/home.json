@@ -2,9 +2,19 @@
     "home": {
         "head-title": "Sergey Didenko blog",
         "title": "Welcome!",
-        "p-1": "My name is Sergey Didenko, I am a software developer.",
-        "span-2": "This is my open source <strong>\"Blog - Project\"</strong>. The main objective is to share the experience.",
-        "span-3": "In the process of development, the blog will have new features and all of this you can see on GitHub, as well as articles on this web portal.",
+
+        "text-1": "My name is ",
+        "link-name-1": "Sergey Didenko",
+        "text-2": ", I am a software developer.",
+
+        "text-3": "This is my open source ",
+        "link-name-2": "\"Blog - Project\"",
+        "text-4": "The main objective is to share the experience.",
+
+        "text-5": "In the process of development, the blog will have new features and all of this you can see on ",
+        "link-name-3": "GitHub",
+        "text-6": "as well as articles on this web portal.",
+
         "content": {
             "title": "About technologies and programming languages"
         }

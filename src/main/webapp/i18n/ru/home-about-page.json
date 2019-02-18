@@ -2,7 +2,67 @@
     "home": {
         "about-page": {
             "head-title": "Блог Сергея Диденко - Обо мне",
-            "title": "Обо мне"
+            "title": "Обо мне",
+            "about": {
+                "p-1": "Всем привет! Меня зовут Сергей Диденко.<br>Я разработчик программного обеспечения.",
+                "p-2": "Я работал со многими клиентами и командами, видел много проектов и проблем.<br>В основном, мне нравится работать с бэкендом, как Java Spring.<br>Но у меня также был огромный опыт работы с фронтом, таким как JS, AngularJS, Angular/TypeScript.",
+                "p-3": "Теперь я слежу за Eclipse Foundation и их JakartaEE. Я думаю, с \"Новым Java Enterprise\" у нас будет будущее!"
+            },
+            "projects": {
+                "title": "Опыт работы с проектами",
+                "languages": "Языки: ",
+                "technologies": "Технологии: ",
+                "8": {
+                    "title": "College management information system (SIMC)",
+                    "description": "Веб-платформа для Инженерного колледжа в Республике Молдова. <br>Информационная система предназначена для <br>автоматизации основных процессов управления колледжем, <br>таких как прием на учебу, продвижение по службе, <br>стажировки для студентов, автоматизация рабочего процесса.",
+                    "languages": "Java, TypeScript, HTML, SCSS, JSON, MySql.",
+                    "technologies": "Angular, Webpack, Spring REST, Spring JPA, Security."
+                },
+                "7": {
+                    "title": "ESPN Fantasy Soccer",
+                    "description": "Это одна из крупнейших в мире платформ для онлайн-ставок, <br>используемая 60% ведущих операторов и <br>объединенная с более чем 40 наиболее известными разработчиками игр в мире. <br>Главной особенностью является набор команды из <br>реальных международных игроков и игры против семьи и друзей. <br>Командные очки начисляются за реальные достижения этих игроков. <br><br>Совместно с Code Factory Group SRL.",
+                    "languages": "Java, JavaScript, HTML, CSS, JSON, MySql.",
+                    "technologies": "Spring MVC, Struts, JSP, JPA, Hibernate, REST, SOAP, MyBatis,Jenkins и другие"
+                },
+                "6": {
+                    "title": "Platform for Dual Education (DVP)",
+                    "description": "Это вебплатформа для Торговой палаты Республики Молдова. <br>Платформа дуального образования - это информационная система, <br>предназначенная для систематизации данных об образовательных учреждениях, выпускниках, студентах, <br>которые уже учатся по системе двойного образования, список технических специальностей <br>и сертифицированных специалистов, данных о частных компаниях <br>(предлагающих работу в технических областях, а также стажировку и обучение для студентов) <br>и автоматизации рабочих процессов. <br><br>Совместно с Valnet-Service SRL.",
+                    "languages": "Java, TypeScript, HTML, SCSS, JSON, MySql.",
+                    "technologies": "Angular, Webpack, Spring REST, Spring JPA, Security."
+                },
+                "5": {
+                    "title": "EZ Parking",
+                    "description": "Это приложение Android + API, которое может предсказать, <br>какое место для парковки будет доступно, и указать его водителям, которые хотят припарковаться. <br>Пользователь может просматривать, редактировать и проверять парковочные места и правила, <br>например: часы работы, дни парковки и т. д.",
+                    "languages": "Java, Android, JSON, XML, MySql.",
+                    "technologies": "Spring REST, Spring JPA, Spring Security."
+                },
+                "4": {
+                    "title": "Fashion Dealer",
+                    "description": "Это платформа электронной коммерции B2B из Италии. <br>Основная работа заключалась в подключении новых API для управления поставщиками и продажами, <br>обновления и модификации алгоритмов, новых модулей для реализации новых идей.",
+                    "languages": "PHP, JavaScript, HTML/CSS, JSON/XML, MySql.",
+                    "technologies": "Ecommerce, Prestashop, AJAX."
+                },
+                "3": {
+                    "title": "Server for children game",
+                    "description": "API для образовательных игр для детей, <br>основная функция хранения данных и активов (картинки, текст, голос и т. д.)",
+
+                    "languages": "Java, JSON, MySql.",
+                    "technologies": "Spring REST, Spring JPA, Spring Security."
+                },
+                "2": {
+                    "title": "Near me Friends",
+                    "description": "Это Android-приложение + API для удобного общения с друзьями. <br>Включает такие функции, как Facebook, Telegram и Google авторизация, <br>просмотр ближайших друзей на карте, составление маршрута к ним, <br>общение в чате, посещение близлежащих мест (как в Facebook) и многое другое.",
+                    "languages": "Java, Android, JSON, XML, MySql.",
+                    "technologies": "Spring REST, Spring JPA, Spring Security."
+                },
+                "1": {
+                    "title": "SPN GPS Tracker",
+                    "description": "Это веб-платформа и приложение для Android для молдавского клиента, <br>предоставляющее инструменты для транспортной логистики, такие как <br>просмотр маршрутов, текущее местоположение, скорость, <br>управление зонами и уведомления о входе или выходе из них, чат для общения.",
+                    "languages": "Java, Android, JavaScript, HTML/CSS, JSON, XML, MySql.",
+                    "technologies": "AngularJS, Spring REST, Spring JPA, Spring Security."
+                }
+            }
+
         }
     }
 }

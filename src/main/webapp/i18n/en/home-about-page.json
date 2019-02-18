@@ -2,7 +2,65 @@
     "home": {
         "about-page": {
             "head-title": "Sergey Didenko blog - About me",
-            "title": "About me"
+            "title": "About me",
+            "about": {
+                "p-1": "Hello all! My name is Sergey Didenko.<br>I am a software developer.",
+                "p-2": "I worked with many clients and teams, saw a lot of projects and issues.<br>Basically, I like working with backend paths like Java Spring.<br>But I also had a lot of experience working with a frontend, such as JS, AngularJS, Angular/TypeScript.",
+                "p-3": "Now I am following the Eclipse Foundation and their JakartaEE. I think with \"New Java Enterprise\" we will get a future!"
+            },
+            "projects": {
+                "title": "Work experience with projects",
+                "languages": "Languages: ",
+                "technologies": "Technologies: ",
+                "8": {
+                    "title": "College management information system (SIMC)",
+                    "description": "Web platform for the College of Engineering in the Republic of Moldova. <br>The information system is designed to <br>automate basic college management processes,<br>such as admission to studies, promotion, <br>internships for students, workflow automation.",
+                    "languages": "Java, TypeScript, HTML, SCSS, JSON, MySql.",
+                    "technologies": "Angular, Webpack, Spring REST, Spring JPA, Security."
+                },
+                "7": {
+                    "title": "ESPN Fantasy Soccer",
+                    "description": "This is one of the largest online betting platforms in the world, <br>used by 60% of the leading operators, integrated with over 40 of the world’s most renowned games’ developers. <br>The main feature is team building of <br>real international players and games against family and friends. <br>Team points are awarded for the actual achievements of these players.<br><br>In collaboration with Code Factory Group SRL.",
+                    "languages": "Java, JavaScript, HTML, CSS, JSON, MySql.",
+                    "technologies": "Spring MVC, Struts, JSP, JPA, Hibernate, REST, SOAP, MyBatis,Jenkins and else."
+                },
+                "6": {
+                    "title": "Platform for Dual Education (DVP)",
+                    "description": "This is a web platform for the Chamber of Commerce of the Republic of Moldova. <br>The dual education platform is an information system designed to systematize data on educational institutions, <br>graduates, students who are already studying the system of dual education, technical specialties and list of certified specialists, <br>data on private companies (offering jobs in technical fields, internships and training for students)<br>and automation of work processes.<br><br>In collaboration with Valnet-Service SRL.",
+                    "languages": "Java, TypeScript, HTML, SCSS, JSON, MySql.",
+                    "technologies": "Angular, Webpack, Spring REST, Spring JPA, Security."
+                },
+                "5": {
+                    "title": "EZ Parking",
+                    "description": "This is an Android application + API, which can predict <br>what kind of public parking space will be available, and point it to drivers who want to park. <br>The user can view, edit and check parking spaces and rules, for example: opening hours, parking days, etc.",
+                    "languages": "Java, Android, JSON, XML, MySql.",
+                    "technologies": "Spring REST, Spring JPA, Spring Security."
+                },
+                "4": {
+                    "title": "Fashion Dealer",
+                    "description": "This is B2B e-commerce platform from Italy. <br>The main work was to connect new APIs for managing suppliers and sales,<br>updating and modifying algorithms, new modules for implementing new ideas.",
+                    "languages": "PHP, JavaScript, HTML/CSS, JSON/XML, MySql.",
+                    "technologies": "Ecommerce, Prestashop, AJAX."
+                },
+                "3": {
+                    "title": "Server for children game",
+                    "description": "API for educational games for children, <br>the main function of storing data and assets (pictures, text, voice, etc.)",
+                    "languages": "Java, JSON, MySql.",
+                    "technologies": "Spring REST, Spring JPA, Spring Security."
+                },
+                "2": {
+                    "title": "Near me Friends",
+                    "description": "This is an Android application + API for easy communication with friends. <br>Includes features such as Facebook, Telegram and Google authorization, <br>viewing your closest friends on a map, making a route to them, <br>chatting, visiting nearby places (like on Facebook) and more.",
+                    "languages": "Java, Android, JSON, XML, MySql.",
+                    "technologies": "Spring REST, Spring JPA, Spring Security."
+                },
+                "1": {
+                    "title": "SPN GPS Tracker",
+                    "description": "This is a web platform and an android application for a Moldovan client, <br>providing tools for transport logistics, such as <br>viewing routes, current position, speed, <br>managing zones and notifications about entering or leaving them, chat for communication.",
+                    "languages": "Java, Android, JavaScript, HTML/CSS, JSON, XML, MySql.",
+                    "technologies": "AngularJS, Spring REST, Spring JPA, Spring Security."
+                }
+            }
         }
     }
 }

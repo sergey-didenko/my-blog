@@ -9,6 +9,8 @@
             "li-3": "To consolidate knowledge in the development and try new solutions",
             "li-4": "To consolidate knowledge in project management",
             "li-5": "<b>Educational material</b> for novice programmers, as the project is developed \"from scratch\". <br>The development process is as close as possible to the workflow, <br>and therefore I hope it will be useful to someone.",
+            "languages": "Java, TypeScript, HTML, SCSS, JSON, MySql.",
+            "technologies": "Angular, Webpack, Spring REST, Spring JPA, Security.",
             "link-1": "Documentation, DB Models, UML",
             "link-2": "Project Board",
             "link-3": "TODO Features",
