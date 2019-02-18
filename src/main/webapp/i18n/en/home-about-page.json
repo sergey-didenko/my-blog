@@ -5,7 +5,7 @@
             "title": "About me",
             "about": {
                 "p-1": "Hello all! My name is Sergey Didenko.<br>I am a software developer.",
-                "p-2": "I worked with many clients and teams, saw a lot of projects and issues.<br>Basically, I like working with backend paths like Java Spring.<br>But I also had a lot of experience working with a frontend, such as JS, AngularJS, Angular/TypeScript.",
+                "p-2": "I worked with many clients and teams, saw a lot of projects and issues.<br>Basically, I like working with backend, like Java Spring.<br>But I also had a lot of experience working with a frontend, such as JS, AngularJS, Angular/TypeScript.",
                 "p-3": "Now I am following the Eclipse Foundation and their JakartaEE. I think with \"New Java Enterprise\" we will get a future!"
             },
             "projects": {
