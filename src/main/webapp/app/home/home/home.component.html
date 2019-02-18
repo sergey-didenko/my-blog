@@ -1,22 +1,100 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mt-3">
             <h1>{{'home.title' | translate}}</h1>
 
             <p [innerHTML]="'home.p-1' | translate">
-                Once upon a time there was a programmer, he developed applications...<br>
-                And once he decided to write a couple of articles, share experiences,show beautiful code, and even thought about the ideal structure of the application.
+                My name is Sergey Didenko, I am a software developer.
             </p>
 
-            <p [innerHTML]="'home.p-2' | translate">
-                I am that developer :)
+            <span [innerHTML]="'home.span-2' | translate">
+                    This is my open source <strong>"Blog - Project"</strong>. The main objective is to share the experience.
+                </span><br>
+            <span [innerHTML]="'home.span-3' | translate">
+                In the process of development, the blog will have new features and all of this you can see on GitHub, as well as articles on this web portal.
+            </span>
+
+        </div>
+
+        <div class="col-md-12 mt-4">
+            <h2>{{'home.about-project-page.title' | translate}}</h2>
+
+            <div [innerHTML]="'home.about-project-page.ul-title' | translate">
+                <p>
+                    <a href="https://git.sergey-didenko.pro/my-blog" target="_blank">The project</a> was created to solve several problems:
+                </p>
+            </div>
+
+            <ul>
+                <li [innerHTML]="'home.about-project-page.li-1' | translate">Develop the right technology stack</li>
+                <li [innerHTML]="'home.about-project-page.li-2' | translate">Develop a convenient and flexible <b>blog</b> using the latest technology</li>
+                <li [innerHTML]="'home.about-project-page.li-3' | translate">To consolidate knowledge in the development and try new solutions</li>
+                <li [innerHTML]="'home.about-project-page.li-4' | translate">To consolidate knowledge in project management</li>
+                <li [innerHTML]="'home.about-project-page.li-5' | translate">
+                    <b>Educational material</b> for novice programmers, as the project is developed "from scratch". <br>
+                    The development process is as close as possible to the workflow, <br>
+                    and therefore I hope it will be useful to someone.
+                </li>
+            </ul>
+
+            <p>
+                <a href="https://doc.sergey-didenko.pro" target="_blank">{{'home.about-project-page.link-1' | translate}}</a><br>
+                <a href="https://github.com/sergey-didenko/my-blog/projects/1" target="_blank">{{'home.about-project-page.link-2' | translate}}</a><br>
+                <a href="https://github.com/sergey-didenko/my-blog/labels/Feature" target="_blank">{{'home.about-project-page.link-3' | translate}}</a><br>
+                <a href="https://github.com/sergey-didenko/my-blog/blob/master/CHANGELOG.md" target="_blank">{{'home.about-project-page.link-4' | translate}}</a>
             </p>
 
-            <p [innerHTML]="'home.p-3' | translate">
-                This blog is also an open source project, maybe it will be useful to you. And also you can read a couple of my articles,<br>
-                when i finish the blog module.
+            <p [innerHTML]="'home.about-project-page.source' | translate">
+                Project sources page available on <a href="https://git.sergey-didenko.pro/my-blog" target="_blank">https://git.sergey-didenko.pro/my-blog</a>
             </p>
 
+            <p [innerHTML]="'home.about-project-page.follow' | translate">
+                Also you can follow my git account <a href="https://git.sergey-didenko.pro" target="_blank">https://git.sergey-didenko.pro</a><br>
+                to get the latest updates.
+            </p>
+        </div>
+
+        <div class="col-md-12 mt-4">
+            <h2>{{'home.content.title' | translate}}</h2>
+
+            <div class="row justify-content-md-center mt-3">
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/java.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/spring.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/hibernate.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/angular.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/mysql.png"/>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center mt-5">
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/typescript.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/javascript.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/gradle.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/apache.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/tomcat.png"/>
+                </div>
+                <div class="col-md-2 pt-3 pb-3 pl-5 pr-5">
+                    <img class="w-100" src="/assets/images/tech/wildfly.png"/>
+                </div>
+            </div>
         </div>
     </div>
 </div>
