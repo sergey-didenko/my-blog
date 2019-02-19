@@ -2,3 +2,5 @@
 
 User-agent: *
 Disallow: /api
+Host: sergey-didenko.pro
+Sitemap: https://sergey-didenko.pro/sitemap.xml

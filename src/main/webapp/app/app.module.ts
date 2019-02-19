@@ -66,7 +66,8 @@ import {MyBlogAuthModule} from 'app/auth/auth.module';
         FooterComponent
     ],
     providers: [
-        AuthInterceptorProvider
+        AuthInterceptorProvider,
+        TranslateService
     ],
     bootstrap: [
         MainComponent
