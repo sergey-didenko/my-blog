@@ -80,6 +80,7 @@ export class MyBlogAppModule {
 
         // default language
         this.translate.setDefaultLang(Languages[0].iso);
+        this.translate.currentLang = Languages[0].iso;
     }
 }
 
