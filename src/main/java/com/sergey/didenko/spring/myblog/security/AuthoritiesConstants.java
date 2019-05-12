@@ -14,21 +14,13 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.rest;
+package com.sergey.didenko.spring.myblog.security;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+public class AuthoritiesConstants {
 
-@RestController
-@RequestMapping("/test")
-public class TestController {
+    public static final String ADMIN = "ROLE_ADMIN";
+    public static final String USER = "ROLE_USER";
 
-    @GetMapping
-    public ResponseEntity<String> testGet() {
-        return new ResponseEntity<>("Success", HttpStatus.OK);
+    private AuthoritiesConstants() {
     }
-
 }

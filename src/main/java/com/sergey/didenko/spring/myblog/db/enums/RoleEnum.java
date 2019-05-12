@@ -14,18 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.db.dao;
+package com.sergey.didenko.spring.myblog.db.enums;
 
-import com.sergey.didenko.myblog.db.entity.Role;
-import com.sergey.didenko.myblog.db.enums.RoleEnum;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
-
-@Repository
-public interface RoleRepository extends JpaRepository<Role, Long> {
-
-    Optional<Role> findByRole(RoleEnum role);
-
+public enum RoleEnum {
+    ROLE_USER,
+    ROLE_ADMIN
 }

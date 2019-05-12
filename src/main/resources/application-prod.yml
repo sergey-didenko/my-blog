@@ -1,7 +1,7 @@
 logging:
     level:
         ROOT: INFO
-        com.svigelf.spring.testJavaEleven: INFO
+        com.sergey.didenko.spring.myblog: INFO
 
 spring:
     profiles:

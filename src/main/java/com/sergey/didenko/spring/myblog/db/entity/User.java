@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.db.entity;
+package com.sergey.didenko.spring.myblog.db.entity;
 
 import org.hibernate.annotations.NaturalId;
 
