@@ -59,7 +59,9 @@ After installing Node, you should be able to run the following command to instal
 
 or gradle task :
 
-    ./gradlew npm_install
+    bash ./gradlew npm_install
+
+    ./gradlew.bat npm_install
 
 #### Fix NPM for Linux users
 
@@ -84,11 +86,15 @@ And then fix permissions for **rimraf**:
 
 **BootRun** - build and run project via terminal
 
-    ./gradlew bootRun
+    bash ./gradlew bootRun
+
+    ./gradlew.bat bootRun
 
 **BootWar** - build project for production
 
-    ./gradlew -Pprod bootWar
+    bash ./gradlew -Pprod bootWar
+
+    ./gradlew.bat -Pprod bootWar
 
 **Jar** Command to run binary
 
