@@ -61,6 +61,24 @@ or gradle task :
 
     ./gradlew npm_install
 
+#### Fix NPM for Linux users
+
+You should fix **NPM** permissions:
+
+    sudo chown -R $(whoami) $HOME/.npm
+    sudo chmod -R 0777 $HOME/.npm
+    sudo chown -R $(whoami) /usr/lib/node_modules
+    sudo chmod -R 0777 /usr/lib/node_modules
+
+Then install **rimraf** globally:
+
+    sudo npm install rimraf -g
+
+And then fix permissions for **rimraf**:
+
+    sudo chown -R $(whoami) /usr/bin/rimraf
+    sudo chmod -R 0777 /usr/bin/rimraf
+
 ## Build configuration
 #### Terminal tasks
 
@@ -106,7 +124,6 @@ or gradle task :
 [Spring boot]: https://spring.io/
 [JPAModelGen]: https://docs.jboss.org/hibernate/jpamodelgen/1.0/reference/en-US/html_single
 [Liquibase]: https://www.liquibase.org/
-[Embeded Tomcat]: http://tomcat.apache.org/
 [Embedded Tomcat]: http://tomcat.apache.org/
 [Gradle]: https://gradle.org/
 
