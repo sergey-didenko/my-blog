@@ -14,13 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.security;
+package com.sergey.didenko.spring.myblog.db.dao;
 
-public class AuthoritiesConstants {
+import com.sergey.didenko.spring.myblog.db.entity.Role;
+import com.sergey.didenko.spring.myblog.db.enums.RoleEnum;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-    public static final String ADMIN = "ROLE_ADMIN";
-    public static final String USER = "ROLE_USER";
+import java.util.Optional;
 
-    private AuthoritiesConstants() {
-    }
+@Repository
+public interface RoleRepository extends JpaRepository<Role, Long> {
+
+    Optional<Role> findByRole(RoleEnum role);
+
 }

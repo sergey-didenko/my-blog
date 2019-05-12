@@ -1,4 +1,4 @@
-package com.sergey.didenko.myblog.db.dto;
+package com.sergey.didenko.spring.myblog.db.dto;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

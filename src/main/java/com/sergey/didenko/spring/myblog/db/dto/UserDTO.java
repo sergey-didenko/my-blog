@@ -1,8 +1,8 @@
-package com.sergey.didenko.myblog.db.dto;
+package com.sergey.didenko.spring.myblog.db.dto;
 
-import com.sergey.didenko.myblog.db.entity.Role;
-import com.sergey.didenko.myblog.db.entity.User;
-import com.sergey.didenko.myblog.db.enums.RoleEnum;
+import com.sergey.didenko.spring.myblog.db.entity.Role;
+import com.sergey.didenko.spring.myblog.db.entity.User;
+import com.sergey.didenko.spring.myblog.db.enums.RoleEnum;
 
 import java.util.Set;
 import java.util.stream.Collectors;

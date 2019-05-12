@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.security.service;
+package com.sergey.didenko.spring.myblog.security.service;
 
-import com.sergey.didenko.myblog.db.dao.UserRepository;
-import com.sergey.didenko.myblog.db.entity.User;
+import com.sergey.didenko.spring.myblog.db.dao.UserRepository;
+import com.sergey.didenko.spring.myblog.db.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -35,7 +35,7 @@ import java.util.stream.Collectors;
 public class UserDetailsServiceImpl implements UserDetailsService {
 
 	@Autowired
-	UserRepository userRepository;
+    UserRepository userRepository;
 
 	@Override
 	@Transactional

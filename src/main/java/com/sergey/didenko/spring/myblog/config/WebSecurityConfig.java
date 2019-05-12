@@ -14,11 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.config;
+package com.sergey.didenko.spring.myblog.config;
 
-import com.sergey.didenko.myblog.security.jwt.JwtAuthEntryPoint;
-import com.sergey.didenko.myblog.security.jwt.JwtAuthTokenFilter;
-import com.sergey.didenko.myblog.security.service.UserDetailsServiceImpl;
+import com.sergey.didenko.spring.myblog.security.jwt.JwtAuthEntryPoint;
+import com.sergey.didenko.spring.myblog.security.jwt.JwtAuthTokenFilter;
+import com.sergey.didenko.spring.myblog.security.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

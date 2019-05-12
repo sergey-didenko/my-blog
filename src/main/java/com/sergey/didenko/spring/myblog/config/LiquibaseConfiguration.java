@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.config;
+package com.sergey.didenko.spring.myblog.config;
 
 import liquibase.integration.spring.SpringLiquibase;
 import org.slf4j.Logger;
@@ -27,7 +27,7 @@ import javax.sql.DataSource;
 /**
  * Liquibase Configuration class
  *
- * @Author Serghei Didenko <svigelf.official@gmail.com>
+ * @Author Sergey Didenko <sergey.didenko.dev@gmail.com>
  */
 @Configuration
 public class LiquibaseConfiguration {

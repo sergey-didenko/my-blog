@@ -14,18 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package com.sergey.didenko.myblog.rest;
+package com.sergey.didenko.spring.myblog.rest;
 
-import com.sergey.didenko.myblog.db.dao.RoleRepository;
-import com.sergey.didenko.myblog.db.dao.UserRepository;
-import com.sergey.didenko.myblog.db.dto.LoginDTO;
-import com.sergey.didenko.myblog.db.dto.RegisterDTO;
-import com.sergey.didenko.myblog.db.dto.UserDTO;
-import com.sergey.didenko.myblog.db.entity.Role;
-import com.sergey.didenko.myblog.db.entity.User;
-import com.sergey.didenko.myblog.db.enums.RoleEnum;
-import com.sergey.didenko.myblog.security.jwt.JwtProvider;
-import com.sergey.didenko.myblog.security.AuthoritiesConstants;
+import com.sergey.didenko.spring.myblog.db.dao.RoleRepository;
+import com.sergey.didenko.spring.myblog.db.dao.UserRepository;
+import com.sergey.didenko.spring.myblog.db.dto.LoginDTO;
+import com.sergey.didenko.spring.myblog.db.dto.RegisterDTO;
+import com.sergey.didenko.spring.myblog.db.dto.UserDTO;
+import com.sergey.didenko.spring.myblog.db.entity.Role;
+import com.sergey.didenko.spring.myblog.db.entity.User;
+import com.sergey.didenko.spring.myblog.db.enums.RoleEnum;
+import com.sergey.didenko.spring.myblog.security.jwt.JwtProvider;
+import com.sergey.didenko.spring.myblog.security.AuthoritiesConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
