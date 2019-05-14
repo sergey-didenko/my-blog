@@ -61,7 +61,7 @@ or gradle task :
 
     bash ./gradlew npm_install
 
-    ./gradlew.bat npm_install
+    gradlew.bat npm_install
 
 #### Fix NPM for Linux users
 
@@ -88,13 +88,13 @@ And then fix permissions for **rimraf**:
 
     bash ./gradlew bootRun
 
-    ./gradlew.bat bootRun
+    gradlew.bat bootRun
 
 **BootWar** - build project for production
 
     bash ./gradlew -Pprod bootWar
 
-    ./gradlew.bat -Pprod bootWar
+    gradlew.bat -Pprod bootWar
 
 **Jar** Command to run binary
 
