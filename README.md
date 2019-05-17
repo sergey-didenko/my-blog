@@ -84,6 +84,12 @@ And then fix permissions for **rimraf**:
 ## Build configuration
 #### Terminal tasks
 
+**WebpackDev** - build front-end path and Run od Dev mode (auto re-build for changes)
+
+    bash ./gradlew webpackDev
+
+    gradlew.bat webpackDev
+
 **BootRun** - build and run project via terminal
 
     bash ./gradlew bootRun

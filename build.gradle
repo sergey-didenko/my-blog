@@ -117,3 +117,7 @@ dependencies {
 wrapper {
     distributionUrl='https://services.gradle.org/distributions/gradle-5.1.1-bin.zip'
 }
+
+task webpackDev(type: NpmTask) {
+    args = ["run", "webpack:dev", "--scripts-prepend-node-path=auto"]
+}
